@@ -1,0 +1,224 @@
+<system.webServer> 
+  <staticContent> 
+    <mimeMap fileExtension=".fx" mimeType="application/fx" /> 
+    <mimeMap fileExtension=".babylon" mimeType="application/babylon" /> 
+    <mimeMap fileExtension=".babylonmeshdata" mimeType="application/babylonmeshdata" /> 
+  </staticContent> 
+</system.webServer>
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>test_babylon</title> 
+
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="babilon_files/css/main.css">
+
+    <script type="text/javascript" src="babilon_files/scripts/hand.1.3.8.js"></script> 
+    <script type="text/javascript" src="babilon_files/scripts/Oimo.js"></script>
+    <script type="text/javascript" src="babilon_files/scripts/babylon.js"></script> 
+    <script type="text/javascript" src="babilon_files/scripts/cannon.js"></script>
+    <script type="text/javascript" src="babilon_files/scripts/jquery-2.1.1.min.js"></script>
+</head> 
+<body> 
+
+    <canvas id="renderCanvas"></canvas> 
+
+    <div id="preload">
+        <div class="hed_prelod">
+            <img src="images/icon/logo_pr.png" width="183" height="79" alt=""/>
+            <h3>«Rose Del Mare»</h3>
+            <p>У самого Черного моря, на берегах южной столицы России, на улице Роз строится новый жилой комплекс бизнес-класса «ROSE DEL MARE».</p>
+        </div>
+        <div class="loader">
+            <img src="images/icon/loader_simpl.gif">
+        </div>
+    </div>
+
+    <div class="icon_muse display_none animated infinite"><img src="babilon_files/icon/mouse.png"></div>
+
+    <div class="instruction display_none">
+        <h2>Управление</h2>
+        <div class="move">
+            <p><img src="babilon_files/icon/key_up_1.png"><img src="babilon_files/icon/key_up_2.png"> - Движение вперед</p>
+            <p><img src="babilon_files/icon/key_right_1.png"><img src="babilon_files/icon/key_right_2.png"> - Движение вправо</p>
+            <p><img src="babilon_files/icon/key_duwn_1.png"><img src="babilon_files/icon/key_duwn_2.png"> - Движение назад</p>
+            <p><img src="babilon_files/icon/key_left_1.png"><img src="babilon_files/icon/key_left_2.png"> - Движение влево</p>
+        </div>
+        <div class="muse">
+            <p><img src="babilon_files/icon/cnt_muse.png"> - Удерживайте колесико мыши для поворота камеры</p>
+            <p><img src="babilon_files/icon/lkm_muse.png"> - ЛКМ открыть/закрыть дверь</p>
+        </div>
+        <div class="alg_cen">
+            <span class="btn_wrap close_instruction">
+                <span class="btn_bg"></span>
+                <span class="btn_cont">Свернуть</span>
+            </span>
+        </div>
+    </div>
+
+    <div class="logo_aiti dis_none"><img src="babilon_files/icon/logo_aiti.png"></div>
+
+    <script> 
+
+        var check_modal = 1;
+        var modal = $('.instruction');
+
+        $('.close_instruction').on('click', function(){
+            if(check_modal == 1){
+                $(modal).css({'top':'-320px'});
+                $('.close_instruction .btn_cont').html('Развернуть');
+                check_modal = 2;
+            } else {
+                $(modal).css({'top':'50px'});
+                $('.close_instruction .btn_cont').html('Свернуть');
+                check_modal = 1;
+            };
+        })
+
+        var muse = $('.icon_muse');
+
+        function start_bounse() {$(muse).addClass('bounce');};
+        function end_bounse() {$(muse).removeClass('bounce');};
+
+        if (BABYLON.Engine.isSupported()) {
+            var canvas = document.getElementById("renderCanvas");
+            var engine = new BABYLON.Engine(canvas, true);
+
+            BABYLON.SceneLoader.Load("babilon_files/flat_52/", "flat_52.babylon", engine, function (scene) {
+
+                // Wait for textures and shaders to be ready
+                scene.executeWhenReady(function () {
+                    // Attach camera to canvas inputs
+                    $('#preload').delay(1000).fadeOut(500);
+
+                    $(muse).removeClass('display_none');
+                    $(modal).removeClass('display_none');
+                    $('.dis_none').delay(3000).fadeIn(500);
+                    
+                    var camera = new BABYLON.FreeCamera("base_camera", new BABYLON.Vector3(-1, 1.5, 3), scene);
+                    camera.applyGravity = true;
+                    camera.checkCollisions = true;
+
+                    camera.ellipsoid = new BABYLON.Vector3(0.05, 0.7, 0.05);
+                    camera.speed = 0.1;
+                    camera.rotation = new BABYLON.Vector3(0, -3, 0);
+                    camera.minZ= 0.001;
+                    camera.maxZ= 100;
+
+                    camera.keysUp = [38,87];
+                    camera.keysDown = [40,83];
+                    camera.keysLeft = [37,65];
+                    camera.keysRight = [39,68];
+
+                    scene.activeCamera = camera;
+                    scene.activeCamera.attachControl(canvas, false);
+
+                    scene.gravity = new BABYLON.Vector3(0, -0.005, 0);
+                    scene.collisionsEnabled = true;
+
+
+                    var door_1 = scene.getMeshByName("Door_Open_Blade_001");
+                    door_1.checkCollisions = true;
+                    door_1.rotation.y = -1.58;
+
+                    door_1.actionManager = new BABYLON.ActionManager(scene);
+                    door_1.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_1, "rotation.y", 0 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_1, "rotation.y", -1.58 , 1000));
+
+                    door_1.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_1.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+                    var door_2 = scene.getMeshByName("Door_Open_Blade_002");
+                    door_2.checkCollisions = true;
+                    door_2.rotation.y = -1.58;
+
+                    door_2.actionManager = new BABYLON.ActionManager(scene);
+                    door_2.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_2, "rotation.y", 0 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_2, "rotation.y", -1.58 , 1000));
+
+                    door_2.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_2.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+
+                    var door_3 = scene.getMeshByName("Door_Open_Blade_003");
+                    door_3.checkCollisions = true;
+                    door_3.rotation.y = -1.58;
+
+                    door_3.actionManager = new BABYLON.ActionManager(scene);
+                    door_3.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_3, "rotation.y", 0 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_3, "rotation.y", -1.58 , 1000));
+
+                    door_3.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_3.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+                    var door_4 = scene.getMeshByName("Door_Open_Blade_007");
+                    door_4.checkCollisions = true;
+                    door_4.rotation.y = 1.58;
+
+                    door_4.actionManager = new BABYLON.ActionManager(scene);
+                    door_4.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_4, "rotation.y", 0 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_4, "rotation.y", 1.58 , 1000));
+
+                    door_4.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_4.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+
+                    var door_5 = scene.getMeshByName("Door_Open_Blade_008");
+                    door_5.checkCollisions = true;
+                    door_5.rotation.y = 1.58;
+
+                    door_5.actionManager = new BABYLON.ActionManager(scene);
+                    door_5.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_5, "rotation.y", 0 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_5, "rotation.y", 1.58 , 1000));
+
+                    door_5.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_5.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+                    var door_6 = scene.getMeshByName("SM_52_WD_Door_1");
+                    door_6.checkCollisions = true;
+                    door_6.rotation.y = -1.58;
+
+                    door_6.actionManager = new BABYLON.ActionManager(scene);
+                    door_6.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_6, "rotation.y", 0.5 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_6, "rotation.y", -1.58 , 1000));
+
+                    door_6.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_6.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+                    var door_7 = scene.getMeshByName("SM_52_WD_Door_2");
+                    door_7.checkCollisions = true;
+                    door_7.rotation.y = -1.58;
+
+                    door_7.actionManager = new BABYLON.ActionManager(scene);
+                    door_7.actionManager.registerAction(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_7, "rotation.y", 0.5 , 1000))
+                    .then(new BABYLON.InterpolateValueAction(BABYLON.ActionManager.OnLeftPickTrigger, door_7, "rotation.y", -1.58 , 1000));
+
+                    door_7.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOverTrigger, function(){start_bounse(muse);}));
+                    door_7.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPointerOutTrigger, function(){end_bounse(muse);}));
+
+
+
+                    // Once the scene is loaded, just register a render loop to render it
+                    engine.runRenderLoop(function() {
+                        scene.render();
+                    });
+                });
+            }, function (progress) {
+                // To do: give progress feedback to user
+            });
+        }
+    </script>
+
+</body> 
+</html>

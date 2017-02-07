@@ -49,10 +49,20 @@
 <div class="nav_contant">
 	<div class="nav_bg"></div>
 	<div class="nav_wrap">
+	<div class="copyrite">
+		<ul>
+			<li>
+				<a class="link_copy" href="http://solution.ircit.ru/developers/promo/" target="_blank" rel="nofollow">Создание промо-сайта - <img id="logo_aiti" src="images/icon/logo_aiti.png" width="49" height="19" alt=""/></a>
+			</li>
+			<li>
+				<p class="copy">&copy; ГлавРусСтрой</p>
+			</li>
+		</ul>	
+	</div>
 	<div class="fix_nav">
 		<ul class="nav_list">
 			<li>
-				<a class="reload_page nav_link" href="index.html" activ-nav="index" data-nav="index">
+				<a class="reload_page nav_link active" href="index.html" activ-nav="index" data-nav="index">
 					<span class="nav_link_cont">Главная</span>
 					<span class="nav_link_bg"></span>
 				</a>
@@ -64,14 +74,14 @@
 				</a>
 			</li>
 			<li>
-				<a class="reload_page nav_link" href="location.html" activ-nav="location" data-nav="location">
-					<span class="nav_link_cont">Расположение</span>
+				<a class="reload_page nav_link" href="progect_document.html" activ-nav="progect_document" data-nav="progect_document">
+					<span class="nav_link_cont">Документы</span>
 					<span class="nav_link_bg"></span>
 				</a>
 			</li>
 			<li>
-				<a class="reload_page nav_link" href="progect_document.html" activ-nav="progect_document" data-nav="progect_document">
-					<span class="nav_link_cont">Документы</span>
+				<a class="reload_page nav_link" href="location.html" activ-nav="location" data-nav="location">
+					<span class="nav_link_cont">Расположение</span>
 					<span class="nav_link_bg"></span>
 				</a>
 			</li>
@@ -94,7 +104,7 @@
 				</a>
 			</li>
 			<li>
-				<a class="reload_page nav_link active" href="virtual-tur.html" activ-nav="virtual-tur" data-nav="virtual-tur">
+				<a class="reload_page nav_link" href="virtual-tur.html" activ-nav="virtual-tur" data-nav="virtual-tur">
 					<span class="nav_link_cont">Виртуальный тур</span>
 					<span class="nav_link_bg"></span>
 				</a>
@@ -106,9 +116,15 @@
 				</a>
 			</li>
 			<li>
-				<a class="reload_page nav_link" href="contact.html" activ-nav="contact" data-nav="contact">
+				<span class="open_contact nav_link" href="contact.html" activ-nav="contact" data-nav="contact">
 					<span class="nav_link_cont">Контакты</span>
 					<span class="nav_link_bg"></span>
+				</span>
+			</li>
+			<li>
+				<a class="reload_page blue_btn hover_btn" href="parameters.html" data-nav="apartments">
+					<span class="btn_bg"></span>
+					<span class="btn_cont">подобрать квартиру</span>
 				</a>
 			</li>
 		</ul>
@@ -124,10 +140,23 @@
 	<div class="page">
 
 		<section id="virtual-tur" class="page_active">
+
+			<div class="coll_blok">
+				<p class="coll_phohe color_light">8 (495) 135-28-48</p>
+				<div class="icon_phone">
+			        <div class="pulse"></div>
+			        <div class="pin-wrap">
+			            <a class="link_phone" href="tel:+74951352848" style="background-image: url(images/icon/icon_phone.png);"></a>
+			        </div>
+				</div>
+			</div>
 		
-			<a class="logo_site nav_blok reload_page" href="index.html" data-nav="index">
+			<a class="logo_site nav_blok reload_page click-linear" href="index.html" data-nav="index">
 				<span class="logo_site_bg"></span>
 				<span class="logo_site_image" style="background-image: url(images/icon/logo_white.png);"></span>
+				<svg class="ripple-obj">
+					<use height="100" width="100" xlink:href="#ripply-linear" class="js-ripple-linear"></use>
+				</svg>
 			</a>
 
 			<div class="infrostruct_header">
@@ -143,37 +172,63 @@
 					<div id="cover_virtual" class="cover_blok">
 						<img id="virtual" class="cover_render" src="images/render/infrostruct.jpg" usemap="#infrostruct"/>
 				        <map name="infrostruct">
-				            <area href="#cover" shape="rect" coords="0,0,343,264" />
-				            <area href="#cover" shape="rect" coords="0,0,432,470" />
-				            <area href="#cover" shape="rect" coords="0,0,737,415" />
+				            <area href="#cover" shape="rect" coords="0,0,547,601" />
+				            <area href="#cover" shape="rect" coords="0,0,721,1011" />
+				            <area href="#cover" shape="rect" coords="0,0,997,297" />
 				        </map>
 
 
 				        <div class="virtual_cont">
-							<div id="virt_1" class="virtual_icon">
-								<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+							<div id="virt_1" class="label col_blue virtual_icon">
+			            		<div class="shadow"></div>
+			            		<div class="pulse"></div>
+			            		<div class="pin-wrap">
+			            			<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+			            		</div>
 							</div>
-							<div id="virt_2" class="virtual_icon">
-								<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+
+							<div id="virt_2" class="label col_blue virtual_icon">
+			            		<div class="shadow"></div>
+			            		<div class="pulse"></div>
+			            		<div class="pin-wrap">
+			            			<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+			            		</div>
 							</div>
-							<div id="virt_3" class="virtual_icon">
-								<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+
+							<div id="virt_3" class="label col_blue virtual_icon">
+			            		<div class="shadow"></div>
+			            		<div class="pulse"></div>
+			            		<div class="pin-wrap">
+			            			<a class="virtual_link animated" href="virtual.html" target="_blank"></a>
+			            		</div>
 							</div>
+
 						</div>
 					</div><!--/.cover_blok-->
 				</div><!--/.cover_wrap-->
 			</div>
 
-			<div class="container animate_fade">		
+			<div class="animate_fade">		
 
-				<a class="reload_page blue_btn hover_btn change_page" href="infrastructure.html" data-nav="infrastructure">
+				<a class="reload_page blue_btn hover_btn change_page click-polygon" href="infrastructure.html" data-nav="infrastructure">
 					<span class="btn_bg"></span>
 					<span class="btn_cont">объекты инфраструктуры</span>
+					<svg class="ripple-obj">
+						<use height="4" width="4" xlink:href="#ripply-polygon" class="js-ripple-polygon"></use>
+					</svg>
 				</a>
 
-				<a class="reload_page orange_btn hover_btn chuse_appart" href="apartments.html" data-nav="apartments">
+				<a class="reload_page orange_btn hover_btn chuse_appart click-radial" href="parameters.html" data-nav="apartments">
 					<span class="btn_bg"></span>
 					<span class="btn_cont">подобрать квартиру</span>
+					<svg class="ripple-obj">
+						<use height="100" width="100" xlink:href="#ripply-radial" class="js-ripple-radial"></use>
+					</svg>
+				</a>
+
+				<a class="orange_btn hover_btn virtual_fix" href="virtual.html" target="_blank">
+					<span class="btn_bg"></span>
+					<span class="btn_cont">Виртуальный тур</span>
 				</a>		
 
 			</div><!--/.container-->
@@ -188,16 +243,101 @@
 <!-- ================================== RELOAD PAGE : END ================================== -->
 <!-- ================================== FOOTER ================================== -->
 <div class="footer">
-	
+	<div class="foot_bg close_contact"></div>
+	<div class="foot_contain">
+	<div class="foot_scroll">
+		<div class="blok_soc foot_sect">
+			<div class="blok_foot">
+				<h3>Контактная информация</h3>
+				<p>г. Сочи, Центральный район между ул. Роз-Воровского на Зеленом переулке</p>
+				<ul class="social_list">
+					<li><a class="soc_icon" href="#" style="background-image: url(images/icon/soc_foot_face.png);"></a></li>
+					<li><a class="soc_icon" href="#" style="background-image: url(images/icon/soc_foot_googl.png);"></a></li>
+					<li><a class="soc_icon" href="#" style="background-image: url(images/icon/soc_foot_twit.png);"></a></li>
+					<li><a class="soc_icon" href="#" style="background-image: url(images/icon/soc_foot_vk.png);"></a></li>
+				</ul>
+				<p class="phone_name">Телефон представительства в Сочи</p>
+				<p class="phone_num">8 (938) 871-72-82</p>
+			</div>
+		</div>
+		<div class="blok_map foot_sect">
+			<div id="google_map" class="map_wrap"></div>
+		</div>
+		<div class="blok_inf foot_sect">
+			<div class="blok_foot">
+				<p>Подробную информацию о жилом комплексе «Rose del Mare» Вы можете получить у наших специалистов в офисе компании «ГлавРусСтрой-Инвест» по адресу:</p>
+				<p class="foot_addr">г. Москва, Олимпийский пр-т, 16, стр.1</p>
+				<p class="phone_name">Телефон представительства в москве</p>
+				<p class="phone_num">8 (495) 135-28-48</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="arr_contact close_contact" style="background-image: url(images/icon/arr_foot.png);"></div>
+	</div>
 </div>
 <!-- ================================== FOOTER END ================================== -->
+<!-- SVG Sprite -->
+	<div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+			<!-- Because of Firefox. -->
+			<defs>
+				<radialGradient id="gradient-radial">
+					<stop offset="0" stop-color="#0868BB" />
+					<stop offset="0.25" stop-color="#0075D8" />
+					<stop offset="0.35" stop-color="#0868BB" />
+					<stop offset="0.50" stop-color="#0075D8" />
+					<stop offset="0.60" stop-color="#0868BB" />
+					<stop offset="0.85" stop-color="#0075D8" />
+					<stop offset="1" stop-color="#0868BB" />
+				</radialGradient>
+				<linearGradient id="gradient-linear" gradientTransform="rotate(0)">
+					<stop offset="0" stop-color="#0868BB" />
+					<stop offset="0.15" stop-color="#0075D8" />
+					<stop offset="0.2" stop-color="#0868BB" />
+					<stop offset="0.25" stop-color="#0075D8" />
+					<stop offset="0.3" stop-color="#0868BB" />
+					<stop offset="0.35" stop-color="#0075D8" />
+					<stop offset="0.4" stop-color="#0868BB" />
+					<stop offset="0.45" stop-color="#0075D8" />
+					<stop offset="0.5" stop-color="#0868BB" />
+					<stop offset="0.6" stop-color="#0075D8" />
+					<stop offset="0.65" stop-color="#0868BB" />
+					<stop offset="0.7" stop-color="#0075D8" />
+					<stop offset="0.75" stop-color="#0868BB" />
+					<stop offset="0.8" stop-color="#0075D8" />
+					<stop offset="0.85" stop-color="#0868BB" />
+					<stop offset="0.9" stop-color="#0075D8" />
+					<stop offset="0.95" stop-color="#0868BB" />
+					<stop offset="1" stop-color="#0075D8" />
+				</linearGradient>
+			</defs>
+			<symbol id="ripply-radial" viewBox="0 0 100 100">
+				<circle id="ripple-shape" fill="url(#gradient-radial)" cx="1" cy="1" r="1" />
+			</symbol>
+			<symbol id="ripply-linear" viewBox="0 0 120 120">
+				<rect width="5" height="5" fill="url(#gradient-linear)" />
+			</symbol>
+			<symbol id="ripply-polygon" viewBox="0 0 100 100">
+				<g>
+					<polygon points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7" />
+					<polygon fill="rgba(255,255,255,0.35)" transform="scale(0.5), translate(50, 50)" points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7" />
+					<polygon fill="rgba(255,255,255,0.25)" transform="scale(0.25), translate(145, 145)" points="5.6,77.4 0,29 39.1,0 83.8,19.3 89.4,67.7 50.3,96.7" />
+				</g>
+			</symbol>
+		</svg>
+	</div>
+<!-- /end sprite -->
  
 </div><!--/ip-main-->
 <!-- ========================================================== BASE PAGE : END ========================================================== -->
 </div><!--/ip-container wripper-->
 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBakVZmW1qrmZcJC6aoaExlT9bP2oxy-J0"></script>
 <script type="text/javascript" src="js/library.js"></script>
+<script type="text/javascript" src="js/mightyslider.min.js"></script>
 <script type="text/javascript" src="js/pathLoader.js"></script>
+<script type="text/javascript" src="js/GLMap.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script> 
 <script type="text/javascript" src="js/main.js"></script> 
 

@@ -97,7 +97,7 @@ $(function () {
 		// calling again render function
 		renderer.render(scene, camera);
 
-		$('.hider').delay(5000).fadeOut(200);
+		$('#preload').delay(5000).fadeOut(500);
 	}
 
 	var rotation = true;

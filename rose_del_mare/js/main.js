@@ -1,8 +1,9 @@
 
-$('body').on('click', 'a.reload_page', function(event){
+$('body').on('click', 'a.reload_page, area[data-link=target-link]', function(event){
 	event.preventDefault();
 
 	nav_close();
+	$('.footer').removeClass('activeted');
 
 	$('.nav_link').removeClass('active');
 	var act_nav = $(this).attr('data-nav');
@@ -35,6 +36,8 @@ function load_content(container, object, pageUrl){
 
 
 function success_load(){
+	$('.mapster_tooltip').remove();
+	
 	var page_current = $('#hidden-content .page_active').attr('id');
 
 	var page_cotainer = $('.page-container');
@@ -43,6 +46,7 @@ function success_load(){
 
 	var load_page = $('#hidden-content .page_active').attr('id');
 
+	general();
 	if(load_page == 'index') { index_func();};
 	if(load_page == 'progect') { abaut_company();};
 	if(load_page == 'progect_detail') { abaut_company_detail();};
@@ -51,12 +55,17 @@ function success_load(){
 	if(load_page == 'virtual-tur') { virtual();};
 	if(load_page == 'infrastructure') { infrastructure();};
 	if(load_page == 'location') { initialize_map();};
+	if(load_page == 'galery') { galery();};
+	if(load_page == 'galery-detail') { galery_detail();};
+	if(load_page == 'apartments') { apartments();};
+	if(load_page == 'corpus') { corpus();};
+	if(load_page == 'floor') { floor();};
+	if(load_page == 'flat') { flat();};
+	if(load_page == 'parameters') { parameters();};	
 
 	setTimeout(function(){
 		$(active_page).addClass('pt-page-scaleDown');
 		$(hide_page).addClass('pt-page-moveFromBottom');
-
-	
 	}, 500);
 	setTimeout(function(){
 		$('.animate_fade').addClass('animate_active');

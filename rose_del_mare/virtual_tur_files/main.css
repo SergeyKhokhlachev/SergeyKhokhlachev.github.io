@@ -1,3 +1,90 @@
+@charset "utf-8";
+/*====================== PRELOAD ======================*/
+#preload{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffe0b2;
+    overflow: hidden;
+    z-index: 9999;
+}
+#preload .hed_prelod{
+    margin: 100px auto 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+}
+#preload .hed_prelod h3{
+    font-family: Verdana, sans-serif;
+    color: #212121;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+#preload .hed_prelod p{
+    font-family: Verdana, sans-serif;
+    color: #212121;
+    font-size: 14px;
+}
+
+#preload .loader{
+    margin-top: 80px;
+    text-align: center;
+}
+#preload .loader img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+@media (max-height: 600px){
+#preload .hed_prelod{
+    margin-top: 50px;
+}
+}
+@media (max-height: 500px){
+#preload .hed_prelod{
+    margin-top: 50px;
+}
+
+#preload .hed_prelod p{
+    opacity: 0;
+}
+#preload .loader{
+    margin-top: 0px;
+}
+}
+@media (max-height: 370px){
+#preload .hed_prelod{
+    margin-top: 70px;
+}   
+#preload .hed_prelod h3{
+    opacity: 0;
+}
+}
+@media (max-width : 520px) {
+.hed_prelod h3{
+    font-size: 26px;
+}
+}
+@media (max-width : 460px) {
+.hed_prelod h3{
+    font-size: 22px;
+}
+}
+/*====================== PRELOAD : END ======================*/
+
+
+
+
+
+
+
 body.hidden .preloader.index{
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -87,14 +174,6 @@ body {
     min-width: 1260px;
 }
 
-#virtual_tour .hider{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #000 url('panarams/icon/loader.gif') 50% 50% no-repeat;
-}
 
 .tour_image{
     width: 100%;
