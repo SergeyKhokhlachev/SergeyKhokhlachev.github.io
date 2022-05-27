@@ -1,2 +1,2 @@
 # SergeyKhokhlachev.github.io
-Demonstration of some works
+Portfolio page with a demonstration of some works
