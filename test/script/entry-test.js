@@ -1,0 +1,2 @@
+import"./chunk/chunk-core.js";import{s as r,f as s}from"./chunk/chunk-_faq-ajax.js";import{s as o}from"./chunk/chunk-swiper-carousel.js";import"./chunk/chunk-vendor.js";window.app.swiperBanner=r;window.app.swiperCarousel=o;window.addEventListener("DOMContentLoaded",()=>{s(),document.querySelectorAll(".js-swiper-banner").forEach(e=>{app.swiperBanner(e)}),document.querySelectorAll(".js-swiper-reviews").forEach(e=>{app.swiperCarousel(e)})});
+//# sourceMappingURL=entry-test.js.map
