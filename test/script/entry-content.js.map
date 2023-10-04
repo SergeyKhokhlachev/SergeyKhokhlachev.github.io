@@ -1,0 +1,1 @@
+{"version":3,"file":"entry-content.js","sources":["../../source/templates/content/content.js"],"sourcesContent":["import '../../core/core.css';\nimport './content.css';\n\nimport '../../core/core';\n\nwindow.addEventListener('DOMContentLoaded', () => {\n\tconsole.log('content');\n});\n"],"names":[],"mappings":"8BAKA,OAAO,iBAAiB,mBAAoB,IAAM,CACjD,QAAQ,IAAI,SAAS,CACtB,CAAC"}

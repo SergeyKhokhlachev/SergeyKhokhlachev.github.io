@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		
+<meta charset="UTF-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png"/>
+<link rel="manifest" href="../favicon/site.webmanifest"/>
+<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#2968e3"/>
+<link rel="shortcut icon" href="../favicon/favicon.ico"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+		<title>Project Template</title>
+		<script type="module" crossorigin src="../script/entry-category.js"></script>
+		<link rel="stylesheet" href="../style/core.css">
+		<link rel="stylesheet" href="../style/vendor.css">
+		<link rel="stylesheet" href="../style/category.css">
+	</head>
+	
+<body class="page">
+  <header class="header">
+    <div class="header__stiky js-header-stiky">
+      <div class="header-top">
+        <div class="container">
+          <div class="location header-top__location">
+            <button class="location__button js-modal" type="button" data-modal="modal-location"><i class="icon icon-location current-color"></i><span class="location__value">Чебоксары</span>
+            </button>
+          </div>
+          <nav class="header-nav header-top__nav">
+            <ul>
+              <li><a class="header-nav__link" href="#"><span>О компании</span><i class="icon icon-chevron-down current-color"></i></a>
+                <ul class="header-nav__dropdown">
+                  <li><a href="#">Сотрудничество</a></li>
+                  <li><a href="#">Сертификаты</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                </ul>
+              </li>
+              <li><a class="header-nav__link" href="#">Доставка и оплата</a></li>
+              <li><a class="header-nav__link" href="#"><span>Покупателям</span><i class="icon icon-chevron-down current-color"></i></a>
+                <ul class="header-nav__dropdown">
+                  <li><a href="#">Бонусная система</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                </ul>
+              </li>
+              <li><a class="header-nav__link" href="#">Магазины</a></li>
+              <li><a class="header-nav__link" href="#">Для бизнеса</a></li>
+            </ul>
+          </nav>
+          <div class="phone header-top__phone"><a class="phone__link" href="tel:+74950707070">+7 (495) 070-70-70</a>
+            <button class="phone__button link link--dashed js-modal" type="button" data-modal="modal-callback"><span>Заказать звонок</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-main container"><a class="logo header-main__logo" href="/"><img class="logo__picture" src="../images/logo-picture.svg" alt=""/><img class="logo__name" src="../images/logo.svg" alt="logo"/></a>
+        <form class="header-search header-main__search">
+          <input class="header-search__field" type="text"/>
+          <button class="header-search__button" type="button"><i class="icon icon-search current-color"></i>
+          </button>
+        </form>
+        <div class="header-main__control">
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-login current-color"></i><span class="header-control__name">Войти</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-compare current-color"></i><span class="header-control__name">Сравнение</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-favorite current-color"></i><span class="header-control__count"></span><span class="header-control__name">Избранное</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-cart current-color"></i><span class="header-control__count"></span><span class="header-control__name">Корзина</span></a></div>
+        </div>
+      </div>
+      <div class="header-both container">
+        <nav class="header-nav header-both__nav">
+          <ul>
+            <li><a class="header-nav__link" href="#">Бренды</a></li>
+            <li><a class="header-nav__link" href="#">Мебель для дома</a></li>
+            <li><a class="header-nav__link" href="#">Одежда</a></li>
+            <li><a class="header-nav__link" href="#">Электроника</a></li>
+            <li><a class="header-nav__link" href="#">Сантехника</a></li>
+            <li><a class="header-nav__link" href="#">Косметика</a></li>
+            <li><a class="header-nav__link" href="#">Акции</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="template-page">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <div class="breadcrumbs__scroll">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a href="/pages/">Главная</a><i class="icon icon-chevron-right current-color"></i>
+            </li>
+            <li class="breadcrumbs__item"><span>Каталог</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="title-page">Каталог</h1>
+      <div class="grid grid--third">
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-1.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-1.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Мебель для дома</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Компьютерная и офисная мебель</a></li>
+                <li class="card-category__item"><a class="link" href="#">Мебель для спальни</a></li>
+                <li class="card-category__item"><a class="link" href="#">Детская мебель</a></li>
+                <li class="card-category__item"><a class="link" href="#">Мягкая мебель</a></li>
+                <li class="card-category__item"><a class="link" href="#">Мебель для кухни</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-2.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-2.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Одежда</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Комбинезоны и полукомбинезоны</a></li>
+                <li class="card-category__item"><a class="link" href="#">Куртки мужские</a></li>
+                <li class="card-category__item"><a class="link" href="#">Толстовки и худи</a></li>
+                <li class="card-category__item"><a class="link" href="#">Футболки</a></li>
+                <li class="card-category__item"><a class="link" href="#">Термобелье</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-3.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-3.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Электроника</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Телефоны и смарт-часы</a></li>
+                <li class="card-category__item"><a class="link" href="#">Моноблоки и системные блоки</a></li>
+                <li class="card-category__item"><a class="link" href="#">Квадрокоптеры и аксессуары</a></li>
+                <li class="card-category__item"><a class="link" href="#">Ноутбуки, планшеты и электронные книги</a></li>
+                <li class="card-category__item"><a class="link" href="#">Фото и видеокамеры</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-4.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-4.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Сантехника</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Смесители и комплектующие</a></li>
+                <li class="card-category__item"><a class="link" href="#">Раковины, умывальники и пьедесталы</a></li>
+                <li class="card-category__item"><a class="link" href="#">Кухонные мойки</a></li>
+                <li class="card-category__item"><a class="link" href="#">Ванны и комплектующие</a></li>
+                <li class="card-category__item"><a class="link" href="#">Души и душевые кабины</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-5.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-5.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Косметика</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Очищение и умывание</a></li>
+                <li class="card-category__item"><a class="link" href="#">Увлажнение и питание</a></li>
+                <li class="card-category__item"><a class="link" href="#">Маски</a></li>
+                <li class="card-category__item"><a class="link" href="#">Патчи</a></li>
+                <li class="card-category__item"><a class="link" href="#">Лосьоны</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-6.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-6.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Ювелирные изделия</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Кольца</a></li>
+                <li class="card-category__item"><a class="link" href="#">Колье и ожерелья</a></li>
+                <li class="card-category__item"><a class="link" href="#">Комплекты украшений</a></li>
+                <li class="card-category__item"><a class="link" href="#">Браслеты</a></li>
+                <li class="card-category__item"><a class="link" href="#">Серьги</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-7.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-7.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Строительные материалы</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Электроинструменты</a></li>
+                <li class="card-category__item"><a class="link" href="#">Расходные материалы и оснастка</a></li>
+                <li class="card-category__item"><a class="link" href="#">Ручной инструмент</a></li>
+                <li class="card-category__item"><a class="link" href="#">Измерительные инструменты</a></li>
+                <li class="card-category__item"><a class="link" href="#">Сварочное оборудование</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-8.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-8.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Спортивные товары</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Зимний спорт</a></li>
+                <li class="card-category__item"><a class="link" href="#">Футбол</a></li>
+                <li class="card-category__item"><a class="link" href="#">Фитнес и йога</a></li>
+                <li class="card-category__item"><a class="link" href="#">Тренажеры</a></li>
+                <li class="card-category__item"><a class="link" href="#">Активные виды отдыха</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="grid__col">
+          <div class="card-category"><a class="card-category__preview" href="#"><span class="card-category__quantity">192 товара</span>
+              <picture>
+                <source data-srcset="" srcset="../images/category__img-9.webp" type="image/webp"/><img data-src="" src="../images/category/category__img-9.png" alt=""/>
+              </picture></a>
+            <div class="card-category__content">
+              <h4><a class="card-category__name" href="#">Товары для сада и дачи</a></h4>
+              <ul class="card-category__list">
+                <li class="card-category__item"><a class="link" href="#">Садовая мебель</a></li>
+                <li class="card-category__item"><a class="link" href="#">Садовый инструмент</a></li>
+                <li class="card-category__item"><a class="link" href="#">Садовая техника</a></li>
+                <li class="card-category__item"><a class="link" href="#">Садовый декор</a></li>
+                <li class="card-category__item"><a class="link" href="#">Отдых и пикник</a></li>
+              </ul><a class="card-category__more link" href="#">Смотреть все<i class="icon icon-chevron-right current-color"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section section--large">
+      <div class="container">
+        <h2 class="title-section">Ранее вы смотрели</h2>
+        <div class="swiper-carousel">
+          <div class="swiper-carousel__swiper swiper js-swiper-actions">
+            <div class="swiper-carousel__wrapper swiper-wrapper">
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-action">
+                  <div class="card-action__preview">
+                    <div class="card-action__date">с 06.02.18 по 06.07.22</div><a class="card-action__img" href="#">
+                      <picture class="lazy js-lazy">
+                        <source data-srcset="../images/card-action__img-1.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-1.jpg" src="../images/pixel.png" alt=""/>
+                      </picture></a>
+                  </div>
+                  <div class="card-action__content"><a class="card-action__name" href="#">Комплект фурнитуры для кухни Премиум-Класса</a>
+                    <p class="card-action__text">Высококачественная фурнитура от ведущего европейского производителя со скидкой 30%.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-action">
+                  <div class="card-action__preview">
+                    <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                      <picture class="lazy js-lazy">
+                        <source data-srcset="../images/card-action__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-2.jpg" src="../images/pixel.png" alt=""/>
+                      </picture></a>
+                  </div>
+                  <div class="card-action__content"><a class="card-action__name" href="#">Брендовые женские сумки - La Redoute</a>
+                    <p class="card-action__text">La Redoute продолжает работу в обычном формате.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-action">
+                  <div class="card-action__preview">
+                    <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                      <picture class="lazy js-lazy">
+                        <source data-srcset="../images/card-action__img-3.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-3.jpg" src="../images/pixel.png" alt=""/>
+                      </picture></a>
+                  </div>
+                  <div class="card-action__content"><a class="card-action__name" href="#">3-ступенчатая система для ухода за проблемной кожей Clinique Anti-Blemish 3-Step System</a>
+                    <p class="card-action__text">Купить подарочные наборы для ухода за кожей по низкой цене</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-action">
+                  <div class="card-action__preview">
+                    <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                      <picture class="lazy js-lazy">
+                        <source data-srcset="../images/card-action__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-2.jpg" src="../images/pixel.png" alt=""/>
+                      </picture></a>
+                  </div>
+                  <div class="card-action__content"><a class="card-action__name" href="#">Комплект фурнитуры для кухни Премиум-Класса</a>
+                    <p class="card-action__text">La Redoute продолжает работу в обычном формате.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar js-swiper-scrollbar"></div>
+          <button class="button-sq swiper-prev js-swiper-prev" type="button" title="Назад"><i class="icon icon-chevron-left current-color"></i>
+          </button>
+          <button class="button-sq swiper-next js-swiper-next" type="button" title="Вперед"><i class="icon icon-chevron-right current-color"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="footer">
+    <div class="footer__main container">
+      <div class="footer__box">
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>МАГАЗИН</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Каталог</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Акции</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Бренды</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Услуги</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>КОМПАНИЯ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">О компании</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Адреса магазинов</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Сертификаты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Партнеры</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>ИНФОРМАЦИЯ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">FAQ</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Для бизнеса</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Реквизиты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Блог</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>ПОКУПАТЕЛЯМ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Доставка и оплата</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Бонусная система</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Возврат</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Гарантия</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__info">
+        <div class="phone"><a class="phone__link" href="tel:+74950707070">+7 (495) 070-70-70</a>
+          <button class="phone__button link link--dashed js-modal" type="button" data-modal="modal-callback"><span>Заказать звонок</span></button>
+        </div>
+        <div class="footer__text">Есть вопросы? Мы с радостью на них ответим.<br>Горячая линия работает пн-пт с 9:00-18:00</div>
+      </div>
+    </div>
+    <div class="footer__hr"></div>
+    <div class="footer__both container">
+      <ul class="footer__list">
+        <li><a class="link link--alternate" href="#">Политика конфиденциальности</a></li>
+        <li><a class="link link--alternate" href="#">Cookies</a></li>
+        <li><a class="link link--alternate" href="#">Карта сайта</a></li>
+      </ul>
+      <ul class="payment">
+        <li class="payment__item"><img src="../images/mir.svg" alt="mir"/></li>
+        <li class="payment__item"><img src="../images/visa.svg" alt="visa"/></li>
+        <li class="payment__item"><img src="../images/mastercard.svg" alt="mastercard"/></li>
+        <li class="payment__item"><img src="../images/qiwi.svg" alt="qiwi"/></li>
+      </ul>
+    </div>
+    <div class="footer__hr"></div>
+    <div class="footer__copy container">
+      <div class="footer__text">2023 © Интернет-магазин</div>
+      <div class="footer__text">Создание сайта — <a class="link" href="#">KISLOROD</a></div>
+    </div>
+  </div>
+</body>
+	
+</html>

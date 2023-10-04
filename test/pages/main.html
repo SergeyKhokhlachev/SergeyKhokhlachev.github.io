@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		
+<meta charset="UTF-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png"/>
+<link rel="manifest" href="../favicon/site.webmanifest"/>
+<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#2968e3"/>
+<link rel="shortcut icon" href="../favicon/favicon.ico"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+		<title>Project Template</title>
+		<script type="module" crossorigin src="../script/entry-main.js"></script>
+		<link rel="stylesheet" href="../style/core.css">
+		<link rel="stylesheet" href="../style/vendor.css">
+		<link rel="stylesheet" href="../style/main.css">
+	</head>
+	
+<body class="page">
+  <header class="header">
+    <div class="header__stiky js-header-stiky">
+      <div class="header-top">
+        <div class="container">
+          <div class="location header-top__location">
+            <button class="location__button js-modal" type="button" data-modal="modal-location"><i class="icon icon-location current-color"></i><span class="location__value">Чебоксары</span>
+            </button>
+          </div>
+          <nav class="header-nav header-top__nav">
+            <ul>
+              <li><a class="header-nav__link" href="#"><span>О компании</span><i class="icon icon-chevron-down current-color"></i></a>
+                <ul class="header-nav__dropdown">
+                  <li><a href="#">Сотрудничество</a></li>
+                  <li><a href="#">Сертификаты</a></li>
+                  <li><a href="#">Партнеры</a></li>
+                </ul>
+              </li>
+              <li><a class="header-nav__link" href="#">Доставка и оплата</a></li>
+              <li><a class="header-nav__link" href="#"><span>Покупателям</span><i class="icon icon-chevron-down current-color"></i></a>
+                <ul class="header-nav__dropdown">
+                  <li><a href="#">Бонусная система</a></li>
+                  <li><a href="#">Возврат</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                </ul>
+              </li>
+              <li><a class="header-nav__link" href="#">Магазины</a></li>
+              <li><a class="header-nav__link" href="#">Для бизнеса</a></li>
+            </ul>
+          </nav>
+          <div class="phone header-top__phone"><a class="phone__link" href="tel:+74950707070">+7 (495) 070-70-70</a>
+            <button class="phone__button link link--dashed js-modal" type="button" data-modal="modal-callback"><span>Заказать звонок</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-main container"><a class="logo header-main__logo" href="/"><img class="logo__picture" src="../images/logo-picture.svg" alt=""/><img class="logo__name" src="../images/logo.svg" alt="logo"/></a>
+        <form class="header-search header-main__search">
+          <input class="header-search__field" type="text"/>
+          <button class="header-search__button" type="button"><i class="icon icon-search current-color"></i>
+          </button>
+        </form>
+        <div class="header-main__control">
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-login current-color"></i><span class="header-control__name">Войти</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-compare current-color"></i><span class="header-control__name">Сравнение</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-favorite current-color"></i><span class="header-control__count"></span><span class="header-control__name">Избранное</span></a></div>
+          <div class="header-control"><a class="header-control__link js-modal" href="modal-singin"><i class="icon icon-cart current-color"></i><span class="header-control__count"></span><span class="header-control__name">Корзина</span></a></div>
+        </div>
+      </div>
+      <div class="header-both container">
+        <nav class="header-nav header-both__nav">
+          <ul>
+            <li><a class="header-nav__link" href="#">Бренды</a></li>
+            <li><a class="header-nav__link" href="#">Мебель для дома</a></li>
+            <li><a class="header-nav__link" href="#">Одежда</a></li>
+            <li><a class="header-nav__link" href="#">Электроника</a></li>
+            <li><a class="header-nav__link" href="#">Сантехника</a></li>
+            <li><a class="header-nav__link" href="#">Косметика</a></li>
+            <li><a class="header-nav__link" href="#">Акции</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="template-page">
+    <div class="swiper-banner">
+      <div class="swiper js-swiper-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-banner__slide">
+              <div class="swiper-banner__image">
+                <picture class="lazy js-lazy">
+                  <source data-srcset="../images/swiper-banner__img-1--large.webp" srcset="../images/pixel.png" media="(min-width: 1366px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/swiper-banner__img-1.jpg" src="../images/pixel.png" alt=""/>
+                </picture>
+              </div>
+              <div class="swiper-banner__box">
+                <div class="swiper-banner__content"><span class="swiper-banner__category">ЭЛЕКТРОНИКА</span>
+                  <p class="swiper-banner__name">Беспроводные наушники</p>
+                  <p class="swiper-banner__text">Наушники OXYGEN MAX 2.0 это настоящий хит сезона. Покупайте электронику в нашем интернет-магазине по выгодным ценам.</p>
+                  <div class="swiper-banner__buttons"><a class="button button--primary" href="#"><span>Перейти в каталог</span></a><a class="button button--outline" href="#"><span>Читать статью</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-banner__slide">
+              <div class="swiper-banner__image">
+                <picture class="lazy js-lazy">
+                  <source data-srcset="../images/swiper-banner__img-2--large.webp" srcset="../images/pixel.png" media="(min-width: 1366px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/swiper-banner__img-2.jpg" src="../images/pixel.png" alt=""/>
+                </picture>
+              </div>
+              <div class="swiper-banner__box">
+                <div class="swiper-banner__content"><span class="swiper-banner__category">Мебель для дома</span>
+                  <p class="swiper-banner__name">Диван Sherst</p>
+                  <p class="swiper-banner__text">Наушники OXYGEN MAX 2.0 это настоящий хит сезона. Покупайте электронику в нашем интернет-магазине по выгодным ценам.</p>
+                  <div class="swiper-banner__buttons"><a class="button button--primary" href="#"><span>Перейти в каталог</span></a><a class="button button--outline" href="#"><span>Читать статью</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-banner__slide">
+              <div class="swiper-banner__image">
+                <picture class="lazy js-lazy">
+                  <source data-srcset="../images/swiper-banner__img-1--large.webp" srcset="../images/pixel.png" media="(min-width: 1366px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-1.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/swiper-banner__img-1.jpg" src="../images/pixel.png" alt=""/>
+                </picture>
+              </div>
+              <div class="swiper-banner__box">
+                <div class="swiper-banner__content"><span class="swiper-banner__category">Одежда</span>
+                  <p class="swiper-banner__name">Куртка утепленная мужская Columbia</p>
+                  <p class="swiper-banner__text">Наушники OXYGEN MAX 2.0 это настоящий хит сезона. Покупайте электронику в нашем интернет-магазине по выгодным ценам.</p>
+                  <div class="swiper-banner__buttons"><a class="button button--primary" href="#"><span>Перейти в каталог</span></a><a class="button button--outline" href="#"><span>Читать статью</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-banner__slide">
+              <div class="swiper-banner__image">
+                <picture class="lazy js-lazy">
+                  <source data-srcset="../images/swiper-banner__img-2--large.webp" srcset="../images/pixel.png" media="(min-width: 1366px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+                  <source data-srcset="../images/swiper-banner__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/swiper-banner__img-2.jpg" src="../images/pixel.png" alt=""/>
+                </picture>
+              </div>
+              <div class="swiper-banner__box">
+                <div class="swiper-banner__content"><span class="swiper-banner__category">Мебель для дома</span>
+                  <p class="swiper-banner__name">Диван Sherst</p>
+                  <p class="swiper-banner__text">Наушники OXYGEN MAX 2.0 это настоящий хит сезона. Покупайте электронику в нашем интернет-магазине по выгодным ценам.</p>
+                  <div class="swiper-banner__buttons"><a class="button button--primary" href="#"><span>Перейти в каталог</span></a><a class="button button--outline" href="#"><span>Читать статью</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination--point js-swiper-pagination"></div>
+      <button class="button-sq button-sq--large swiper-prev js-swiper-prev" type="button" title="Назад"><i class="icon icon-chevron-left current-color"></i>
+      </button>
+      <button class="button-sq button-sq--large swiper-next js-swiper-next" type="button" title="Вперед"><i class="icon icon-chevron-right current-color"></i>
+      </button>
+    </div>
+    <div class="bannerline">
+      <div class="bannerline__item bannerline__item--medium"><a class="card-banner" href="#">
+          <div class="card-banner__preview">
+            <picture class="lazy js-lazy">
+              <source data-srcset="../images/banner__img-1--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-1--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-1.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/banner__img-1.jpg" src="../images/pixel.png" alt=""/>
+            </picture>
+          </div>
+          <div class="card-banner__content"><span class="card-banner__category">МЕБЕЛЬ ДЛЯ ДОМА</span>
+            <h4 class="card-banner__name">Мебель для всей семьи</h4>
+          </div></a>
+      </div>
+      <div class="bannerline__item bannerline__item--medium"><a class="card-banner" href="#">
+          <div class="card-banner__preview">
+            <picture class="lazy js-lazy">
+              <source data-srcset="../images/banner__img-2--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-2--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/banner__img-2.jpg" src="../images/pixel.png" alt=""/>
+            </picture>
+          </div>
+          <div class="card-banner__content"><span class="card-banner__category">УСЛУГА</span>
+            <h4 class="card-banner__name">Доставка до двери за 30 минут</h4>
+          </div></a>
+      </div>
+      <div class="bannerline__item bannerline__item--large"><a class="card-banner" href="#">
+          <div class="card-banner__preview">
+            <picture class="lazy js-lazy">
+              <source data-srcset="../images/banner__img-3--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-3--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+              <source data-srcset="../images/banner__img-3.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/banner__img-3.jpg" src="../images/pixel.png" alt=""/>
+            </picture>
+          </div>
+          <div class="card-banner__content"><span class="card-banner__category">АКЦИЯ</span>
+            <h4 class="card-banner__name">Сезонные скидки 15% на все коллекции</h4>
+          </div></a>
+      </div>
+    </div>
+    <section class="section section--medium">
+      <div class="container">
+        <h2 class="title-section">Выгодные предложения</h2>
+        <div class="grid grid--half">
+          <div class="grid__col">
+            <div class="card-action">
+              <div class="card-action__preview">
+                <div class="card-action__date">с 06.02.18 по 06.07.22</div><a class="card-action__img" href="#">
+                  <picture class="lazy js-lazy">
+                    <source data-srcset="../images/card-action__img-1.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-1.jpg" src="../images/pixel.png" alt=""/>
+                  </picture></a>
+              </div>
+              <div class="card-action__content"><a class="card-action__name" href="#">Комплект фурнитуры для кухни Премиум-Класса</a>
+                <p class="card-action__text">Высококачественная фурнитура от ведущего европейского производителя со скидкой 30%.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__col">
+            <div class="card-action">
+              <div class="card-action__preview">
+                <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                  <picture class="lazy js-lazy">
+                    <source data-srcset="../images/card-action__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-2.jpg" src="../images/pixel.png" alt=""/>
+                  </picture></a>
+              </div>
+              <div class="card-action__content"><a class="card-action__name" href="#">Брендовые женские сумки - La Redoute</a>
+                <p class="card-action__text">La Redoute продолжает работу в обычном формате.</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__col">
+            <div class="card-action">
+              <div class="card-action__preview">
+                <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                  <picture class="lazy js-lazy">
+                    <source data-srcset="../images/card-action__img-3.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-3.jpg" src="../images/pixel.png" alt=""/>
+                  </picture></a>
+              </div>
+              <div class="card-action__content"><a class="card-action__name" href="#">3-ступенчатая система для ухода за проблемной кожей Clinique Anti-Blemish 3-Step System</a>
+                <p class="card-action__text">Купить подарочные наборы для ухода за кожей по низкой цене</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid__col">
+            <div class="card-action">
+              <div class="card-action__preview">
+                <div class="card-action__date">с 01.02.22 по 04.05.22</div><a class="card-action__img" href="#">
+                  <picture class="lazy js-lazy">
+                    <source data-srcset="../images/card-action__img-2.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/card-action__img-2.jpg" src="../images/pixel.png" alt=""/>
+                  </picture></a>
+              </div>
+              <div class="card-action__content"><a class="card-action__name" href="#">Комплект фурнитуры для кухни Премиум-Класса</a>
+                <p class="card-action__text">La Redoute продолжает работу в обычном формате.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--large">
+      <div class="container">
+        <div class="control-list tabs js-tabs">
+          <div class="control-list__head">
+            <button class="control-list__button tabs__button active js-tabs__button" type="button" data-tab="tab-1">Описание</button>
+            <button class="control-list__button tabs__button js-tabs__button" type="button" data-tab="tab-2">Хакартеристики</button>
+            <button class="control-list__button tabs__button js-tabs__button" type="button" data-tab="tab-3">Отзывы</button>
+          </div>
+          <div class="control-list__body js-tabs__wrapper">
+            <div class="control-list__content tabs__content active js-tabs__content" data-tab="tab-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quis omnis asperiores aliquam, incidunt sapiente impedit, nihil eveniet, atque repellendus harum consequuntur quod consequatur vero. Libero adipisci non amet. Molestiae.</div>
+            <div class="control-list__content tabs__content js-tabs__content" data-tab="tab-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore id qui minima debitis voluptate velit delectus in cupiditate, cumque veniam cum, error unde non esse distinctio ipsum, quas maxime animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum labore libero voluptatum consequatur, hic ratione fuga nulla distinctio quam! Accusantium sequi eius, doloribus obcaecati reiciendis repellendus. Distinctio, assumenda laudantium.</div>
+            <div class="control-list__content tabs__content js-tabs__content" data-tab="tab-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore id qui minima debitis voluptate velit delectus in cupiditate, cumque veniam cum, error unde non esse distinctio ipsum, quas maxime animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum labore libero voluptatum consequatur, hic ratione fuga nulla distinctio quam! Accusantium sequi eius, doloribus obcaecati reiciendis repellendus. Distinctio, assumenda laudantium. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore id qui minima debitis voluptate velit delectus in cupiditate, cumque veniam cum, error unde non esse distinctio ipsum, quas maxime animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cum labore libero voluptatum consequatur, hic ratione fuga nulla distinctio quam! Accusantium sequi eius, doloribus obcaecati reiciendis repellendus. Distinctio, assumenda laudantium.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--medium section--secondary">
+      <div class="container">
+        <h2 class="title-section">Последние отзывы</h2>
+        <div class="swiper-carousel">
+          <div class="swiper-carousel__swiper swiper js-swiper-reviews">
+            <div class="swiper-carousel__wrapper swiper-wrapper">
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#D4BFD9;">К</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Кирилл</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Платье длинное UNIQLO Портраш с фирменной вязкой для повседной жизни</a>
+                      <p class="card-review__text">Искал жене подарок на годовщину. В таком ассортименте что-то выбрать — нереально. Поэтому позвонил по телефону. Ответила приятная девушка и помогла с выбором. Заказал духи и часы. Жене очень понравился запах, а часы носит каждый день. Что еще для счастья нужно, когда любимая. Искал жене подарок на годовщину. В таком ассортименте что-то выбрать — нереально. Поэтому позвонил по телефону. Ответила приятная девушка и помогла с выбором. Заказал духи и часы. Жене очень понравился запах, а часы носит каждый день. Что еще для счастья нужно, когда любимая.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#C4D9BF;">А</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Анжелика Трофимова</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Кондиционер LESSAR RS-1000580 Home edition</a>
+                      <p class="card-review__text">Заказали монтаж кондиционера. Мастер приехал по договоренности. Минута в минуту. Вежливый и аккуратный. Установил все за час, настроил и рассказал как пользоваться. После работ еще и все убрал за собой. Теперь регулируем температуру в квартире через приложение. Это очень удобно. Если вам нужна установка и настройка техники, то вам точно.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#BFC8D9;">С</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Светлана Дьяченко</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Душевая кабина BORK Ultimate 4000-200</a>
+                      <p class="card-review__text">Долго выбирала, ставить ванную или душевую кабину в квартиру. Хотела сэкономить место, но боялась, что будет неудобно принимать душ в кабине.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#D4BFD9;">К</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Кирилл</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Платье длинное UNIQLO Портраш с фирменной вязкой для повседной жизни</a>
+                      <p class="card-review__text">Искал жене подарок на годовщину. В таком ассортименте что-то выбрать — нереально. Поэтому позвонил по телефону. Ответила приятная девушка и помогла с выбором. Заказал духи и часы. Жене очень понравился запах, а часы носит каждый день. Что еще для счастья нужно, когда любимая. Искал жене подарок на годовщину. В таком ассортименте что-то выбрать — нереально. Поэтому позвонил по телефону. Ответила приятная девушка и помогла с выбором. Заказал духи и часы. Жене очень понравился запах, а часы носит каждый день. Что еще для счастья нужно, когда любимая.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#C4D9BF;">А</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Анжелика Трофимова</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Кондиционер LESSAR RS-1000580 Home edition</a>
+                      <p class="card-review__text">Заказали монтаж кондиционера. Мастер приехал по договоренности. Минута в минуту. Вежливый и аккуратный. Установил все за час, настроил и рассказал как пользоваться. После работ еще и все убрал за собой. Теперь регулируем температуру в квартире через приложение. Это очень удобно. Если вам нужна установка и настройка техники, то вам точно.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-carousel__slide swiper-slide">
+                <div class="card-review">
+                  <div class="card-review__head">
+                    <div class="card-review__avatar" style="background:#BFC8D9;">С</div>
+                    <div class="card-review__info">
+                      <time class="card-review__date">26.10.2017</time><span class="card-review__name">Светлана Дьяченко</span>
+                    </div>
+                  </div>
+                  <div class="card-review__body">
+                    <div class="card-review__content"><a class="card-review__title" href="#">Душевая кабина BORK Ultimate 4000-200</a>
+                      <p class="card-review__text">Долго выбирала, ставить ванную или душевую кабину в квартиру. Хотела сэкономить место, но боялась, что будет неудобно принимать душ в кабине.</p>
+                    </div><a class="card-review__more link" href="#">Перейти к отзыву<i class="icon icon-chevron-right current-color"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar js-swiper-scrollbar"></div>
+          <button class="button-sq swiper-prev js-swiper-prev" type="button" title="Назад"><i class="icon icon-chevron-left current-color"></i>
+          </button>
+          <button class="button-sq swiper-next js-swiper-next" type="button" title="Вперед"><i class="icon icon-chevron-right current-color"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="section section--medium">
+      <div class="container">
+        <h2 class="title-section">Ответы на частые вопросы</h2>
+        <div class="faq js-demo-faq">
+          <div class="faq__list collapse js-collapse" data-collapse="collapse">
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Какими брендами можно заменить Zara?</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p></div>
+              </div>
+            </div>
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Если не работает оплата с сайта, что делать?</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p></div>
+              </div>
+            </div>
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Где можно воспользоваться бонусной картой?</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p></div>
+              </div>
+            </div>
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Если не работает оплата с сайта, что делать?</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p></div>
+              </div>
+            </div>
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Как получить промо-код для вашего интернет-магазина?</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p></div>
+              </div>
+            </div>
+            <div class="faq__element collapse__element js-collapse__element">
+              <button class="faq__header collapse__button js-collapse__button" type="button"><span>Не могу дозвониться на Горячую Линию</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+              </button>
+              <div class="faq__body collapse__content js-collapse__content">
+                <div class="faq__content"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, deserunt officiis! Quae iste quas nam temporibus iure amet eius aperiam molestiae cumque officiis aspernatur numquam ad in soluta, alias quam.</p></div>
+              </div>
+            </div>
+          </div>
+          <button class="faq__button button button--accent" type="button"><span>Показать еще</span></button>
+        </div>
+      </div>
+    </section>
+    <div class="promo"><a class="promo__banner-link" href="#">
+        <picture class="lazy js-lazy">
+          <source data-srcset="../images/promo-banner--desktop.webp" srcset="../images/pixel.png" media="(min-width: 1280px)" type="image/webp"/>
+          <source data-srcset="../images/promo-banner--laptop.webp" srcset="../images/pixel.png" media="(min-width: 992px)" type="image/webp"/>
+          <source data-srcset="../images/promo-banner--tablet.webp" srcset="../images/pixel.png" media="(min-width: 768px)" type="image/webp"/>
+          <source data-srcset="../images/promo-banner.webp" srcset="../images/pixel.png" type="image/webp"/><img data-src="../images/promo-banner.jpg" src="../images/pixel.png" alt=""/>
+        </picture></a></div>
+    <section class="section section--medium">
+      <div class="container js-shops"></div>
+    </section>
+  </div>
+  <div class="footer">
+    <div class="footer__main container">
+      <div class="footer__box">
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>МАГАЗИН</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Каталог</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Акции</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Бренды</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Услуги</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>КОМПАНИЯ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">О компании</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Адреса магазинов</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Сертификаты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Партнеры</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>ИНФОРМАЦИЯ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">FAQ</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Для бизнеса</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Реквизиты</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Блог</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer-nav collapse js-collapse" data-collapse="collapse">
+          <div class="collapse__element js-collapse__element">
+            <div class="footer-nav__title collapse__button js-collapse__button" role="button"><span>ПОКУПАТЕЛЯМ</span><i class="icon icon-chevron-down current-color collapse__icon"></i>
+            </div>
+            <ul class="footer-nav__list collapse__content js-collapse__content">
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Доставка и оплата</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Бонусная система</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Возврат</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link link link--alternate" href="#">Гарантия</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__info">
+        <div class="phone"><a class="phone__link" href="tel:+74950707070">+7 (495) 070-70-70</a>
+          <button class="phone__button link link--dashed js-modal" type="button" data-modal="modal-callback"><span>Заказать звонок</span></button>
+        </div>
+        <div class="footer__text">Есть вопросы? Мы с радостью на них ответим.<br>Горячая линия работает пн-пт с 9:00-18:00</div>
+      </div>
+    </div>
+    <div class="footer__hr"></div>
+    <div class="footer__both container">
+      <ul class="footer__list">
+        <li><a class="link link--alternate" href="#">Политика конфиденциальности</a></li>
+        <li><a class="link link--alternate" href="#">Cookies</a></li>
+        <li><a class="link link--alternate" href="#">Карта сайта</a></li>
+      </ul>
+      <ul class="payment">
+        <li class="payment__item"><img src="../images/mir.svg" alt="mir"/></li>
+        <li class="payment__item"><img src="../images/visa.svg" alt="visa"/></li>
+        <li class="payment__item"><img src="../images/mastercard.svg" alt="mastercard"/></li>
+        <li class="payment__item"><img src="../images/qiwi.svg" alt="qiwi"/></li>
+      </ul>
+    </div>
+    <div class="footer__hr"></div>
+    <div class="footer__copy container">
+      <div class="footer__text">2023 © Интернет-магазин</div>
+      <div class="footer__text">Создание сайта — <a class="link" href="#">KISLOROD</a></div>
+    </div>
+  </div>
+</body>
+	
+</html>

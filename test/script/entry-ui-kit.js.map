@@ -1,0 +1,1 @@
+{"version":3,"file":"entry-ui-kit.js","sources":["../../source/templates/ui-kit/ui-kit.js"],"sourcesContent":["import '../../core/core.css';\nimport './ui-kit.css';\n\nimport '../../core/core';\n\nwindow.addEventListener('DOMContentLoaded', () => {\n\tconsole.log('uikit');\n});\n"],"names":[],"mappings":"8BAKA,OAAO,iBAAiB,mBAAoB,IAAM,CACjD,QAAQ,IAAI,OAAO,CACpB,CAAC"}

@@ -1,0 +1,2 @@
+import{S as s,N as l,a}from"./chunk-vendor.js";const p=(e,r={})=>{new s(e,{modules:[l,a],slidesPerView:"auto",spaceBetween:0,navigation:{prevEl:e.parentElement.querySelector(".js-swiper-prev"),nextEl:e.parentElement.querySelector(".js-swiper-next")},scrollbar:{el:e.parentElement.querySelector(".js-swiper-scrollbar"),hide:!1,draggable:!0},breakpoints:r})};export{p as s};
+//# sourceMappingURL=chunk-swiper-carousel.js.map
