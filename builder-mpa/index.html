@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		
+<meta charset="UTF-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/>
+<link rel="manifest" href="/favicon/site.webmanifest"/>
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2968e3"/>
+<link rel="shortcut icon" href="/favicon/favicon.ico"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+		<title>Page list</title>
+		<script type="module" crossorigin src="/index-Cv-jgapO.js"></script>
+		<link rel="stylesheet" crossorigin href="/index-rqQSV-kj.css">
+	</head>
+	
+<body class="wrapper" data-barba="wrapper">
+  <div class="page-loader active js-page-loader"></div>
+  <header class="header js-header js-sticky-indent">
+    <div class="header__wrapper">
+      <div class="header__top">
+        <div class="container">
+          <div class="location js-location">
+            <button class="location__button js-modal-open" type="button" data-modal="#modal-location"><span class="location__label">Ваш город</span><i class="icon icon-location" aria-hidden="true"></i><span class="location__value js-location-value">Москва</span>
+            </button>
+            <div class="location__dropdown js-location-dropdown" aria-label="Подтверждение города">
+              <div class="location__title">Ваш город <span class='js-location-define'></span>?</div>
+              <div class="location__action">
+                <button class="button button--outline js-location-modal" type="button">Выбрать другой</button>
+                <button class="button button--primary js-location-approve" type="button">Да, всё верно</button>
+              </div>
+            </div>
+          </div>
+          <nav class="header-navigate">
+            <div class="header-navigate__category dropdown js-dropdown"><a class="header-navigate__link dropdown__button js-dropdown__button" href="#" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-company-dropdown">О компании<i class="icon icon-chevron-down dropdown__icon" aria-hidden="true"></i></a>
+              <ul class="header-navigate__dropdown dropdown__content" id="nav-company-dropdown">
+                <li class="header-navigate__item"><a href="#">Сотрудничество</a></li>
+                <li class="header-navigate__item"><a href="#">Сертификаты</a></li>
+                <li class="header-navigate__item"><a href="#">Партнёры</a></li>
+              </ul>
+            </div>
+            <div class="header-navigate__category dropdown js-dropdown"><a class="header-navigate__link dropdown__button js-dropdown__button" href="#" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-buyers-dropdown">Покупателям<i class="icon icon-chevron-down dropdown__icon" aria-hidden="true"></i></a>
+              <ul class="header-navigate__dropdown dropdown__content" id="nav-buyers-dropdown">
+                <li class="header-navigate__item"><a href="#">Бонусная система</a></li>
+                <li class="header-navigate__item"><a href="#">Сертификаты</a></li>
+                <li class="header-navigate__item"><a href="#">Гарантия</a></li>
+              </ul>
+            </div>
+            <div class="header-navigate__category"><a class="header-navigate__link" href="#">Доставка и оплата</a></div>
+            <div class="header-navigate__category"><a class="header-navigate__link" href="/pages/shops.html">Магазины</a></div>
+            <div class="header-navigate__category"><a class="header-navigate__link" href="#">Для бизнеса</a></div>
+          </nav>
+          <div class="callback"><a class="callback__link" href="tel:+7 (495) 975-91-27">+7 (495) 975-91-27</a>
+            <button class="callback__button link link--dashed js-modal-open" type="button" data-modal="#modal-callback"><span>Заказать звонок</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="container">
+          <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="/" aria-label="Главная страница"><img class="header-logo__icon" src="/images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="/images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
+          <div class="header__search">
+            <form class="search js-search" action="/search/" role="search">
+              <div class="search__layer js-search__layer" aria-hidden="true"></div>
+              <div class="search__box">
+                <div class="search__control js-search__control">
+                  <input class="search__field js-search__field" id="search-input" name="search" type="text" value="" autocomplete="off" role="combobox" aria-label="Поиск по сайту" aria-expanded="false" aria-controls="search-results-list" aria-autocomplete="list"/>
+                  <button class="search__apply js-search__apply" type="submit" disabled="true" aria-label="Найти"><span aria-hidden="true">Найти</span><i class="icon icon-search" aria-hidden="true"></i>
+                  </button>
+                  <button class="search__clear js-search__clear" type="button" aria-label="Очистить поле поиска"><i class="icon icon-close" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <button class="search__close js-search__close" type="button" aria-label="Закрыть поиск"><i class="icon icon-close" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="search__dropdown">
+                <div class="search-result js-search__result" id="search-results-list" role="listbox" aria-label="Результаты поиска"></div>
+              </div>
+            </form>
+          </div>
+          <div class="header-controll">
+            <div class="header-control__item">
+              <button class="header-control__button js-modal-open" type="button" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
+            </div>
+            <div class="header-control__item"><a class="header-control__button" href="#"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
+            <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Избранное, 8 товаров"><span class="header-controll__icon"><i class="icon icon-favorite" aria-hidden="true"></i><span class="header-control__count">8</span></span><span class="header-controll__name">Избранное</span></a></div>
+            <div class="header-control__item dropdown js-dropdown" data-dropdown="click">
+              <button class="header-control__button js-dropdown__button" type="button" aria-label="Корзина 3 товара" aria-haspopup="listbox" aria-expanded="false" aria-controls="header-checkout"><span class="header-controll__icon"><i class="icon icon-cart" aria-hidden="true"></i><span class="header-control__count">3</span></span><span class="header-controll__name">Корзина</span></button>
+              <div class="header-control__dropdown dropdown__content" id="header-checkout">
+                <div class="js-checkout-preview-vue"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <form class="search js-search" action="/search/" role="search">
+            <div class="search__layer js-search__layer" aria-hidden="true"></div>
+            <div class="search__box">
+              <div class="search__control js-search__control">
+                <input class="search__field js-search__field" id="search-input" name="search" type="text" value="" autocomplete="off" role="combobox" aria-label="Поиск по сайту" aria-expanded="false" aria-controls="search-results-list" aria-autocomplete="list"/>
+                <button class="search__apply js-search__apply" type="submit" disabled="true" aria-label="Найти"><span aria-hidden="true">Найти</span><i class="icon icon-search" aria-hidden="true"></i>
+                </button>
+                <button class="search__clear js-search__clear" type="button" aria-label="Очистить поле поиска"><i class="icon icon-close" aria-hidden="true"></i>
+                </button>
+              </div>
+              <button class="search__close js-search__close" type="button" aria-label="Закрыть поиск"><i class="icon icon-close" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="search__dropdown">
+              <div class="search-result js-search__result" id="search-results-list" role="listbox" aria-label="Результаты поиска"></div>
+            </div>
+          </form>
+          <button class="header-menu__close js-header-close" type="button" aria-label="Закрыть каталог"><i class="icon icon-close" aria-hidden="true"></i>
+          </button>
+          <div class="header-menu__tabs tabs js-tabs">
+            <div class="header-menu__control tabs__control" role="tablist" aria-label="Разделы меню">
+              <button class="header-menu__tab-btn tabs__button js-tabs__button active" id="header-tab-btn-catalog" type="button" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog">Товары</button>
+              <button class="header-menu__tab-btn tabs__button js-tabs__button" id="header-tab-btn-company" type="button" role="tab" aria-selected="false" aria-controls="header-tab-panel-company" tabindex="-1">Компания</button>
+              <button class="header-menu__tab-btn tabs__button js-tabs__button" id="header-tab-btn-brands" type="button" role="tab" aria-selected="false" aria-controls="header-tab-panel-brands" tabindex="-1">Бренды</button>
+            </div>
+            <div class="header-menu__content">
+              <div class="header-menu__tab-con tabs__element js-tabs__element" id="header-tab-panel-catalog" role="tabpanel" aria-labelledby="header-tab-btn-catalog">
+                <nav aria-label="Каталог товаров">
+                  <ul class="header-menu__list">
+                    <li><a class="header-menu__link" href="#">Одежда и обувь</a></li>
+                    <li><a class="header-menu__link" href="#">Электроника</a></li>
+                    <li><a class="header-menu__link" href="#">Мебель</a></li>
+                    <li><a class="header-menu__link" href="#">Красота</a></li>
+                    <li><a class="header-menu__link" href="#">Стройматериалы</a></li>
+                    <li><a class="header-menu__link" href="#">Товары для дома и дачи</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-menu__tab-con tabs__element js-tabs__element" id="header-tab-panel-company" role="tabpanel" aria-labelledby="header-tab-btn-company" hidden="hidden">
+                <nav aria-label="О компании">
+                  <ul class="header-menu__list">
+                    <li><a class="header-menu__link" href="#">Сотрудничество</a></li>
+                    <li><a class="header-menu__link" href="#">Сертификаты</a></li>
+                    <li><a class="header-menu__link" href="#">Партнёры</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-menu__tab-con tabs__element js-tabs__element" id="header-tab-panel-brands" role="tabpanel" aria-labelledby="header-tab-btn-brands" hidden="hidden">
+                <nav aria-label="Популярные бренды">
+                  <ul class="header-menu__list">
+                    <li><a class="header-menu__link" href="#">Xiaomi</a></li>
+                    <li><a class="header-menu__link" href="#">Karcher</a></li>
+                    <li><a class="header-menu__link" href="#">H&amp;M</a></li>
+                    <li><a class="header-menu__link" href="#">ZARA</a></li>
+                    <li><a class="header-menu__link" href="#">HENDERSON</a></li>
+                    <li><a class="header-menu__link" href="#">Mango</a></li>
+                    <li><a class="header-menu__link" href="#">BORK</a></li>
+                    <li><a class="header-menu__link" href="#">Knoll</a></li>
+                    <li><a class="header-menu__link" href="#">Givenchy</a></li>
+                    <li><a class="header-menu__link" href="#">Nivea</a></li>
+                    <li><a class="header-menu__link" href="#">Oriflame</a></li>
+                    <li><a class="header-menu__link" href="#">NAOS</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <nav class="header-additional" aria-label="Дополнительно">
+            <ul class="header-additional__list">
+              <li><a class="header-additional__link" href="#"><i class="icon icon-favorite" aria-hidden="true"></i><span>Избранное</span></a></li>
+              <li><a class="header-additional__link" href="#"><i class="icon icon-delivery" aria-hidden="true"></i><span>Доставка и оплата</span></a></li>
+              <li><a class="header-additional__link" href="/pages/shops.html"><i class="icon icon-shop" aria-hidden="true"></i><span>Адреса магазинов</span></a></li>
+            </ul>
+          </nav>
+          <div class="header-menu__location">
+            <div class="location js-location">
+              <button class="location__button js-modal-open" type="button" data-modal="#modal-location"><span class="location__label">Ваш город</span><i class="icon icon-location" aria-hidden="true"></i><span class="location__value js-location-value">Москва</span>
+              </button>
+            </div>
+          </div>
+          <div class="header-menu__box">
+            <div class="header-menu__label">Телефон</div>
+            <div class="callback"><a class="callback__link" href="tel:+7 (495) 975-91-27">+7 (495) 975-91-27</a>
+              <button class="callback__button link link--dashed js-modal-open" type="button" data-modal="#modal-callback"><span>Заказать звонок</span></button>
+            </div>
+          </div>
+          <div class="header-menu__box">
+            <div class="header-menu__label">Контактный email</div><a class="header-menu__email link" href="mailto:email@email.ru"><i class="icon icon-sms" aria-hidden="true"></i>email@email.ru</a>
+          </div>
+          <div class="header-menu__box">
+            <div class="header-menu__label">Режим работы:</div>
+            <div class="header-menu__text">Пн - Вс: 11.00 - 19.00</div>
+          </div>
+          <ul class="header-social">
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="YouTube"><img src="/images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Instagram"><img src="/images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Whatsapp"><img src="/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="VK"><img src="/images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Telegram"><img src="/images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+          </ul>
+          <div class="header-menu__copyright">
+            <p>2026 © Интернет-магазин</p>
+            <p>Создание сайта — <a href="#" target="_blank" rel="noopener noreferrer">KISLOROD</a></p>
+          </div>
+        </div>
+      </div>
+      <nav class="header-catalog tabs js-tabs" data-tabs="mouseenter">
+        <div class="container">
+          <div class="header-catalog__aside">
+            <div class="header-catalog__scrollbox" role="tablist" aria-label="Разделы меню"><a class="header-catalog__category js-tabs__button active" href="#" id="header-tab-btn-catalog-clothing" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-clothing" tabindex="-1">Одежда и обувь</a><a class="header-catalog__category js-tabs__button" href="#" id="header-tab-btn-catalog-electronics" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-electronics" tabindex="-1">Электроника</a><a class="header-catalog__category js-tabs__button" href="#" id="header-tab-btn-catalog-furniture" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-furniture" tabindex="-1">Мебель</a><a class="header-catalog__category js-tabs__button" href="#" id="header-tab-btn-catalog-beauty" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-beauty" tabindex="-1">Красота</a><a class="header-catalog__category js-tabs__button" href="#" id="header-tab-btn-catalog-materials" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-materials" tabindex="-1">Стройматериалы</a><a class="header-catalog__category js-tabs__button" href="#" id="header-tab-btn-catalog-household" role="tab" aria-selected="true" aria-controls="header-tab-panel-catalog-household" tabindex="-1">Товары для дома и дачи</a>
+            </div>
+            <ul class="header-catalog__accent">
+              <li><a class="header-catalog__item" href="#"><span>Распродажи</span></a></li>
+              <li><a class="header-catalog__item" href="#"><span>Акции</span></a></li>
+            </ul>
+          </div>
+          <div class="header-catalog__main">
+            <div class="header-catalog__banners">
+              <div class="header-catalog__banner">
+                <picture class="picture js-picture">
+                  <source srcset="../images/menu-banner-1.webp" type="image/webp"/><img src="../images/menu-banner-1.jpg" alt="Скидка до 12% на офисную мебель" loading="lazy" width="337" height="109"/>
+                </picture>
+              </div>
+              <div class="header-catalog__banner">
+                <picture class="picture js-picture">
+                  <source srcset="../images/menu-banner-2.webp" type="image/webp"/><img src="../images/menu-banner-2.jpg" alt="Скидка до 30% на текстиль" loading="lazy" width="338" height="109"/>
+                </picture>
+              </div>
+              <div class="header-catalog__banner">
+                <picture class="picture js-picture">
+                  <source srcset="../images/menu-banner-3.webp" type="image/webp"/><img src="../images/menu-banner-3.jpg" alt="Скидка до 20% на столики" loading="lazy" width="337" height="109"/>
+                </picture>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element active" id="header-tab-panel-catalog-clothing" data-tab="Одежда и обувь" role="tabpanel" aria-labelledby="header-tab-btn-catalog-clothing">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Компьютерная и офисная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Столы и стулья</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Барные и полубарные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для кухни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные уголки</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные гарнитуры</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные модули</a></li>
+                    <li><a class="header-catalog__link" href="#">Фартуки для кухни</a></li>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                    <li><a class="header-catalog__link" href="#">Столешницы и комплектующие</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Садовая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для бизнеса</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для хранения</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Бескаркасная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Детская мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Колыбели</a></li>
+                    <li><a class="header-catalog__link" href="#">Парты и столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Наборы детской мебели</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья и табуреты</a></li>
+                    <li><a class="header-catalog__link" href="#">Пеленальные комоды и столики</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мягкая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для спальни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Диваны</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Гарнитуры и комплекты</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element" id="header-tab-panel-catalog-electronics" data-tab="Электроника" role="tabpanel" aria-labelledby="header-tab-btn-catalog-electronics">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Столы и стулья</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Барные и полубарные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для кухни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные уголки</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные гарнитуры</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные модули</a></li>
+                    <li><a class="header-catalog__link" href="#">Фартуки для кухни</a></li>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                    <li><a class="header-catalog__link" href="#">Столешницы и комплектующие</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Бескаркасная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мягкая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Гарнитуры и комплекты</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element" id="header-tab-panel-catalog-furniture" data-tab="Мебель" role="tabpanel" aria-labelledby="header-tab-btn-catalog-furniture">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Компьютерная и офисная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Столы и стулья</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Барные и полубарные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для кухни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные уголки</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные гарнитуры</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные модули</a></li>
+                    <li><a class="header-catalog__link" href="#">Фартуки для кухни</a></li>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                    <li><a class="header-catalog__link" href="#">Столешницы и комплектующие</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element" id="header-tab-panel-catalog-beauty" data-tab="Красота" role="tabpanel" aria-labelledby="header-tab-btn-catalog-beauty">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Компьютерная и офисная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Столы и стулья</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Барные и полубарные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для кухни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные уголки</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные гарнитуры</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные модули</a></li>
+                    <li><a class="header-catalog__link" href="#">Фартуки для кухни</a></li>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                    <li><a class="header-catalog__link" href="#">Столешницы и комплектующие</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Садовая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для бизнеса</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для хранения</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Бескаркасная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Детская мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Колыбели</a></li>
+                    <li><a class="header-catalog__link" href="#">Парты и столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Наборы детской мебели</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья и табуреты</a></li>
+                    <li><a class="header-catalog__link" href="#">Пеленальные комоды и столики</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мягкая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для спальни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Диваны</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Гарнитуры и комплекты</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element" id="header-tab-panel-catalog-materials" data-tab="Стройматериалы" role="tabpanel" aria-labelledby="header-tab-btn-catalog-materials">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Компьютерная и офисная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для бизнеса</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для хранения</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Бескаркасная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Детская мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Колыбели</a></li>
+                    <li><a class="header-catalog__link" href="#">Парты и столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Наборы детской мебели</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья и табуреты</a></li>
+                    <li><a class="header-catalog__link" href="#">Пеленальные комоды и столики</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мягкая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для спальни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Диваны</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Гарнитуры и комплекты</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-catalog__box tabs__element js-tabs__element" id="header-tab-panel-catalog-household" data-tab="Товары для дома и дачи" role="tabpanel" aria-labelledby="header-tab-btn-catalog-household">
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Столы и стулья</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Барные и полубарные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные и барные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для кухни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Кухонные уголки</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные гарнитуры</a></li>
+                    <li><a class="header-catalog__link" href="#">Кухонные модули</a></li>
+                    <li><a class="header-catalog__link" href="#">Фартуки для кухни</a></li>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                    <li><a class="header-catalog__link" href="#">Столешницы и комплектующие</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Садовая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Поддоны кухонные</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для бизнеса</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для хранения</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Бескаркасная мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Для торгового зала</a></li>
+                    <li><a class="header-catalog__link" href="#">Для салонов красоты</a></li>
+                    <li><a class="header-catalog__link" href="#">Для тату-салона</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Детская мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Колыбели</a></li>
+                    <li><a class="header-catalog__link" href="#">Парты и столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Наборы детской мебели</a></li>
+                    <li><a class="header-catalog__link" href="#">Стулья и табуреты</a></li>
+                    <li><a class="header-catalog__link" href="#">Пеленальные комоды и столики</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мягкая мебель</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и офисные кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="header-catalog__column">
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Мебель для спальни</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Диваны</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+                <div class="header-catalog__group">
+                  <div class="header-catalog__title"><a href="#">Гарнитуры и комплекты</a></div>
+                  <ul>
+                    <li><a class="header-catalog__link" href="#">Компьютерные и письменные столы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные тумбы</a></li>
+                    <li><a class="header-catalog__link" href="#">Офисные стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                    <li><a class="header-catalog__link" href="#">Кресла-мешки</a></li>
+                    <li><a class="header-catalog__link" href="#">Пуфики и банкетки</a></li>
+                    <li><a class="header-catalog__link" href="#">Ортопедические стулья</a></li>
+                    <li><a class="header-catalog__link" href="#">Подставки под ноги</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="page" data-barba="container" data-barba-namespace="index">
+    <div class="demo-page-list container">
+      <div class="demo-page-list__title">Список страниц</div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">UI</div>
+        <ul>
+          <li><a href="pages/ui-kit.html">UI Kit</a></li>
+          <li><a href="pages/base-content.html">Base content</a></li>
+        </ul>
+      </div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">Common</div>
+        <ul>
+          <li><a href="pages/not-found.html">404</a></li>
+          <li><a href="pages/main.html">Главная</a></li>
+          <li><a href="pages/shops.html">Магазины</a></li>
+        </ul>
+      </div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">Product</div>
+        <ul>
+          <li><a href="pages/category.html">Категории</a></li>
+          <li><a href="pages/catalog.html">Каталог</a></li>
+          <li><a href="pages/product.html">Страница товара</a></li>
+        </ul>
+      </div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">Checkout</div>
+        <ul>
+          <li><a href="pages/checkout.html">Корзина/Оформление</a></li>
+          <li><a href="pages/checkout-result.html">Страница резильтатов</a></li>
+        </ul>
+      </div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">News / Actions</div>
+        <ul>
+        </ul>
+      </div>
+      <div class="demo-page-list__block">
+        <div class="demo-page-list__name">Personal</div>
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="subscribe js-subscribe">
+    <div class="container">
+      <h2 class="subscribe__title">Не пропустите специальные предложения и акции</h2>
+      <p class="subscribe__subtitle">Подпишитесь на нашу рассылку и получите промокод на скидку 10%</p>
+      <form class="subscribe__form js-subscribe__form" novalidate="novalidate">
+        <div class="form-element js-form-element">
+          <div class="form-element">
+            <input class="form-input js-form-input" id="subscribe-email" type="email" name="email" placeholder="Введите Email" autocomplete="email" required="required" data-message="email" data-rule="email"/>
+          </div>
+          <div class="form-element__message js-form-element__message"></div>
+        </div>
+        <button class="button button--outline subscribe__button js-subscribe__button" type="submit" disabled="true"><span>Подписаться<i class="icon icon-send" aria-hidden="true"></i></span></button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer js-footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__primary">
+          <nav class="footer-nav collapse js-collapse" aria-label="Основные разделы сайта">
+            <div class="footer-nav__box collapse__element js-collapse__element">
+              <h3 class="footer-nav__title collapse__button js-collapse__button" role="button" aria-expanded="false" aria-controls="footer-shop-list">Магазин<i class="icon icon-chevron-down footer-nav__icon collapse__icon" aria-hidden="true"></i>
+              </h3>
+              <ul class="footer-nav__list collapse__content" id="footer-shop-list">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Услуги</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__box collapse__element js-collapse__element">
+              <h3 class="footer-nav__title collapse__button js-collapse__button" role="button" aria-expanded="false" aria-controls="footer-company-list">Компания<i class="icon icon-chevron-down footer-nav__icon collapse__icon" aria-hidden="true"></i>
+              </h3>
+              <ul class="footer-nav__list collapse__content" id="footer-company-list">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Адреса магазинов</a></li>
+                <li><a href="#">Сертификаты</a></li>
+                <li><a href="#">Партнеры</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__box collapse__element js-collapse__element">
+              <h3 class="footer-nav__title collapse__button js-collapse__button" role="button" aria-expanded="false" aria-controls="footer-info-list">Информация<i class="icon icon-chevron-down footer-nav__icon collapse__icon" aria-hidden="true"></i>
+              </h3>
+              <ul class="footer-nav__list collapse__content" id="footer-info-list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Для бизнеса</a></li>
+                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#">Блог</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav__box collapse__element js-collapse__element">
+              <h3 class="footer-nav__title collapse__button js-collapse__button" role="button" aria-expanded="false" aria-controls="footer-buyers-list">Покупателям<i class="icon icon-chevron-down footer-nav__icon collapse__icon" aria-hidden="true"></i>
+              </h3>
+              <ul class="footer-nav__list collapse__content" id="footer-buyers-list">
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Бонусная система</a></li>
+                <li><a href="#">Возврат</a></li>
+                <li><a href="#">Гарантия</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer-info">
+            <div class="callback footer__callback"><a class="callback__link" href="tel:+7 (495) 975-91-27">+7 (495) 975-91-27</a>
+              <button class="callback__button link link--dashed js-modal-open" type="button" data-modal="#modal-callback"><span>Заказать звонок</span></button>
+            </div>
+            <p class="footer-info__text">Есть вопросы? Мы с радостью на них ответим.<br>Горячая линия работает пн-пт с 9:00-18:00</p>
+            <address class="footer-info__address"><span><i class="icon icon-location" aria-hidden="true"></i>Чебоксары, ул. Лермонтова 21, 3 этаж, офис 4</span><br/><span><i class="icon icon-sms" aria-hidden="true"></i><a href="mailto:email@email.ru">email@email.ru</a></span></address>
+          </div>
+        </div>
+        <div class="footer__secondary">
+          <nav aria-label="Социальные сети">
+            <ul class="footer__social-list">
+              <li><a href="#" target="_blank" aria-label="YouTube"><img src="/images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Instagram"><img src="/images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="VK"><img src="/images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Telegram"><img src="/images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+            </ul>
+          </nav>
+          <div class="footer__legal">
+            <p>ООО “Готовые компоненты”</p>
+            <p>ИНН: 7770005551</p>
+            <p>ОГРН: 1000000000777</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <nav aria-label="Правовые ссылки">
+          <ul class="footer__list">
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__payment">
+          <li><img src="/images/mir.svg" alt="Платёжная система Мир" width="50" height="15"/></li>
+          <li><img src="/images/visa.svg" alt="Платёжная система Visa" width="44" height="15"/></li>
+          <li><img src="/images/mastercard.svg" alt="Платёжная система Mastercard" width="34" height="21"/></li>
+          <li><img src="/images/qiwi.svg" alt="Платёжный сервис QIWI" width="56" height="21"/></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="container"><span>2026 © Интернет-магазин</span><span>Создание сайта — <a target='_blank' rel="noopener noreferrer" href='#'>KISLORODS</a></span></div>
+    </div>
+  </footer>
+  <div class="notify-layer js-notify-layer"></div>
+  <div class="modal-layer js-modal-layer js-modal-close"></div>
+  <div class="modal-window hidden js-modal modal-window--small" id="modal-callback" role="dialog" aria-modal="true">
+    <button class="modal-window__close js-modal-close" type="button" aria-label="Закрыть"><i class="icon icon-close" aria-hidden="true"></i>
+    </button>
+    <div class="modal-window__content js-modal__content">
+      <h3 class="modal-window__title">Заказать звонок</h3>
+      <div class="modal-window__text">Если вы не желаете дожидаться ответа по нашей Горячей Линии, то просто оставьте свой номер телефона и мы сами вам перезвоним</div>
+      <form class="callback-form js-callback" novalidate="novalidate">
+        <div class="form-element js-form-element">
+          <label class="form-element__label"><span>Имя</span><span class="form-element__required" aria-hidden="true">*</span>
+          </label>
+          <div class="form-element">
+            <input class="form-input js-form-input" id="callback-name" type="text" name="name" placeholder="Введите Имя" autocomplete="given-name" required="required" data-message="text" data-rule="text"/>
+          </div>
+          <div class="form-element__message js-form-element__message"></div>
+        </div>
+        <div class="form-element js-form-element">
+          <label class="form-element__label"><span>Номер телефона</span><span class="form-element__required" aria-hidden="true">*</span>
+          </label>
+          <div class="form-element">
+            <input class="form-input js-form-input" id="callback-tel" type="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="tel" required="required" maxlength="18" data-message="tel" data-rule="tel"/>
+          </div>
+          <div class="form-element__message js-form-element__message"></div>
+        </div>
+        <button class="button button--primary callback-form__button js-callback__button" type="submit"><span>Отправить заявку</span></button>
+        <div class="callback-form__describe">
+          Отправляя заявку, вы соглашаетесь с
+          <a class="link link--dashed" href="#" target="_blank" rel="nofollow"><span>обработкой персональных данных</span></a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-window hidden js-modal modal-window--small" id="modal-login" role="dialog" aria-modal="true">
+    <button class="modal-window__close js-modal-close" type="button" aria-label="Закрыть"><i class="icon icon-close" aria-hidden="true"></i>
+    </button>
+    <div class="modal-window__content js-modal__content">
+      <div class="js-login-vue"></div>
+    </div>
+  </div>
+  <div class="modal-window hidden js-modal modal-window--small" id="modal-location" role="dialog" aria-modal="true">
+    <button class="modal-window__close js-modal-close" type="button" aria-label="Закрыть"><i class="icon icon-close" aria-hidden="true"></i>
+    </button>
+    <div class="modal-window__content js-modal__content">
+      <h3 class="modal-window__title">Выбор города</h3>
+      <div class="js-location-search-vue"></div>
+    </div>
+  </div>
+</body>
+</html>

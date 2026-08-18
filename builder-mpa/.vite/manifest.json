@@ -1,0 +1,17 @@
+{
+  "_index-Cv-jgapO.js": {
+    "file": "index-Cv-jgapO.js",
+    "name": "index",
+    "css": [
+      "index-rqQSV-kj.css"
+    ]
+  },
+  "_index-rqQSV-kj.css": {
+    "file": "index-rqQSV-kj.css",
+    "src": "_index-rqQSV-kj.css"
+  },
+  "spritemap.svg": {
+    "file": "sprite/spritemap.svg",
+    "src": "spritemap.svg"
+  }
+}
