@@ -814,7 +814,7 @@
       </nav>
     </div>
   </header>
-  <div class="page" data-barba="container" data-barba-namespace="main">
+  <main class="page" data-barba="container" data-barba-namespace="main">
     <h1 class="visually-hidden">Интернет-магазин мебели и электроники</h1>
     <section class="section">
       <h2 class="visually-hidden">Главные предложения и акции</h2>
@@ -893,8 +893,8 @@
               <button class="swiper-button swiper-next js-swiper-next" type="button" aria-label="Вперед"><i class="icon icon-chevron-right" aria-hidden="true"></i>
               </button>
             </div>
-            <div class="swiper" id="">
-              <div class="swiper-wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper" role="list">
                 <div class="swiper-slide swiper-slide--large"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">18 товаров</span>
                     <h3 class="category-preview__name">Мебель для дома</h3>
                     <picture class="picture js-picture">
@@ -933,7 +933,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar js-swiper-scrollbar" role="scrollbar" aria-orientation="horizontal"></div>
+            <div class="swiper-scrollbar js-swiper-scrollbar"></div>
           </div>
         </div>
       </div>
@@ -941,7 +941,7 @@
     <section class="section section--padding section--color">
       <div class="container">
         <h2 class="page-title">Наш блог</h2>
-        <div class="main-blog" role="region" aria-label="Последние статьи">
+        <div class="main-blog" role="list" aria-label="Последние статьи">
           <div class="main-blog__col-md">
             <article class="blog-card blog-card--big" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
                 <picture class="picture js-picture">
@@ -1000,8 +1000,8 @@
               <button class="swiper-button swiper-next js-swiper-next" type="button" aria-label="Вперед"><i class="icon icon-chevron-right" aria-hidden="true"></i>
               </button>
             </div>
-            <div class="swiper" id="">
-              <div class="swiper-wrapper">
+            <div class="swiper">
+              <div class="swiper-wrapper" role="list">
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
@@ -1132,7 +1132,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar js-swiper-scrollbar" role="scrollbar" aria-orientation="horizontal"></div>
+            <div class="swiper-scrollbar js-swiper-scrollbar"></div>
           </div>
         </div>
       </div>
@@ -1198,7 +1198,7 @@
         </ul>
       </div>
     </section>
-  </div>
+  </main>
   <section class="subscribe js-subscribe">
     <div class="container">
       <h2 class="subscribe__title">Не пропустите специальные предложения и акции</h2>
