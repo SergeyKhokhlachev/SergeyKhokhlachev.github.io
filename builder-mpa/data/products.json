@@ -1,7 +1,7 @@
 [
 	{
 		"id": "product-1",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Куртка треккинговая North Face",
 		"article": "WR430462-31",
@@ -14,7 +14,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -58,7 +58,7 @@
 	},
 	{
 		"id": "product-2",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Рюкзак мембранный мужской Merrell",
 		"article": "WR284922-96",
@@ -71,7 +71,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Гарантирует комфорт во время зимних походов и активного отдыха на природе.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -89,7 +89,7 @@
 	},
 	{
 		"id": "product-3",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Футболка влагозащитная мужская Merrell",
 		"article": "WR436723-53",
@@ -102,7 +102,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Отличный выбор для защиты от непогоды во время занятий спортом.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -125,7 +125,7 @@
 	},
 	{
 		"id": "product-4",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Рюкзак спортивный женский Volkl",
 		"article": "WR632739-39",
@@ -138,7 +138,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Технологичная модель, разработанная специально для интенсивных тренировок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -151,7 +151,7 @@
 	},
 	{
 		"id": "product-5",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Куртка спортивная женская Salomon",
 		"article": "WR540262-67",
@@ -164,7 +164,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Идеально подходит для повседневного использования и долгих прогулок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -183,7 +183,7 @@
 	},
 	{
 		"id": "product-6",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка спортивная унисекс Columbia",
 		"article": "WR901822-23",
@@ -196,7 +196,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Отличный выбор для защиты от непогоды во время занятий спортом.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -235,7 +235,7 @@
 	},
 	{
 		"id": "product-7",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Футболка зимняя мужская Kappa",
 		"article": "WR375125-20",
@@ -248,7 +248,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Идеально подходит для повседневного использования и долгих прогулок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -282,7 +282,7 @@
 	},
 	{
 		"id": "product-8",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Перчатки мембранные унисекс Columbia",
 		"article": "WR680026-66",
@@ -295,7 +295,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -329,7 +329,7 @@
 	},
 	{
 		"id": "product-9",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Перчатки утепленные унисекс Columbia",
 		"article": "WR768087-65",
@@ -342,7 +342,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Идеально подходит для повседневного использования и долгих прогулок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -371,7 +371,7 @@
 	},
 	{
 		"id": "product-10",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Куртка треккинговая унисекс North Face",
 		"article": "WR743090-49",
@@ -384,7 +384,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Гарантирует комфорт во время зимних походов и active отдыха на природе.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -418,7 +418,7 @@
 	},
 	{
 		"id": "product-11",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Обувь",
 		"name": "Ботинки влагозащитные мужские Kappa",
 		"article": "WR345480-84",
@@ -431,7 +431,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -455,7 +455,7 @@
 	},
 	{
 		"id": "product-12",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Куртка влагозащитная унисекс Columbia",
 		"article": "WR871180-10",
@@ -468,7 +468,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -491,7 +491,7 @@
 	},
 	{
 		"id": "product-13",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Перчатки влагозащитные унисекс Volkl",
 		"article": "WR168273-10",
@@ -504,7 +504,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Гарантирует комфорт во время зимних походов и активного отдыха на природе.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -528,7 +528,7 @@
 	},
 	{
 		"id": "product-14",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка влагозащитная женская Columbia",
 		"article": "WR846985-77",
@@ -541,7 +541,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Отличный выбор для защиты от непогоды во время занятий спортом.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -570,7 +570,7 @@
 	},
 	{
 		"id": "product-15",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Перчатки мембранные унисекс Salomon",
 		"article": "WR153153-73",
@@ -583,7 +583,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -622,7 +622,7 @@
 	},
 	{
 		"id": "product-16",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Толстовка зимняя женская Columbia",
 		"article": "WR126778-14",
@@ -635,7 +635,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -669,7 +669,7 @@
 	},
 	{
 		"id": "product-17",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Рюкзак утепленный мужской Merrell",
 		"article": "WR540527-24",
@@ -682,7 +682,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -711,7 +711,7 @@
 	},
 	{
 		"id": "product-18",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Рюкзак треккинговый женский Columbia",
 		"article": "WR189756-46",
@@ -724,7 +724,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Отличный выбор для защиты от непогоды во время занятий спортом.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -753,7 +753,7 @@
 	},
 	{
 		"id": "product-19",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Рюкзак треккинговый унисекс Columbia",
 		"article": "WR520528-23",
@@ -766,7 +766,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -795,7 +795,7 @@
 	},
 	{
 		"id": "product-20",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Аксессуары",
 		"name": "Перчатки зимние унисекс Kappa",
 		"article": "WR898797-51",
@@ -808,7 +808,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Отличный выбор для защиты от непогоды во время занятий спортом.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -837,7 +837,7 @@
 	},
 	{
 		"id": "product-21",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Толстовка утепленная унисекс Volkl",
 		"article": "WR225942-54",
@@ -850,7 +850,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -869,7 +869,7 @@
 	},
 	{
 		"id": "product-22",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Обувь",
 		"name": "Ботинки мембранные женские Salomon",
 		"article": "WR205277-42",
@@ -882,7 +882,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -916,7 +916,7 @@
 	},
 	{
 		"id": "product-23",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка мембранная унисекс North Face",
 		"article": "WR843077-53",
@@ -929,7 +929,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Технологичная модель, разработанная специально для интенсивных тренировок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -942,7 +942,7 @@
 	},
 	{
 		"id": "product-24",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка влагозащитная унисекс Kappa",
 		"article": "WR885440-91",
@@ -955,7 +955,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [],
 		"colors": [
 			{
@@ -978,7 +978,7 @@
 	},
 	{
 		"id": "product-25",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Толстовка зимняя мужская Outventure",
 		"article": "WR464837-93",
@@ -991,7 +991,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Обеспечивает надежную защиту от влаги и ветра в любых условиях.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -1015,7 +1015,7 @@
 	},
 	{
 		"id": "product-26",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Футболка влагозащитная мужская Outventure",
 		"article": "WR807676-73",
@@ -1028,7 +1028,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Гарантирует комфорт во время зимних походов и активного отдыха на природе.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -1047,7 +1047,7 @@
 	},
 	{
 		"id": "product-27",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка влагозащитная унисекс Merrell",
 		"article": "WR345800-95",
@@ -1060,7 +1060,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#1B2125",
@@ -1094,7 +1094,7 @@
 	},
 	{
 		"id": "product-28",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Обувь",
 		"name": "Ботинки влагозащитные мужские Outventure",
 		"article": "WR336636-70",
@@ -1107,7 +1107,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Идеально подходит для повседневного использования и долгих прогулок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -1146,7 +1146,7 @@
 	},
 	{
 		"id": "product-29",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Одежда",
 		"name": "Толстовка зимняя мужская North Face",
 		"article": "WR258487-76",
@@ -1159,7 +1159,7 @@
 		"compare": true,
 		"available": true,
 		"describe": "Технологичная модель, разработанная специально для интенсивных тренировок.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
@@ -1183,7 +1183,7 @@
 	},
 	{
 		"id": "product-30",
-		"href": "../pages/product.html",
+		"href": "/builder-mpa/pages/product.html",
 		"category": "Головные уборы",
 		"name": "Шапка мембранная унисекс Salomon",
 		"article": "WR188333-53",
@@ -1196,7 +1196,7 @@
 		"compare": false,
 		"available": true,
 		"describe": "Легкий и прочный материал обеспечивает максимальную свободу движений.",
-		"image": "../images/product-short-1.jpg",
+		"image": "/builder-mpa/images/product-short-1.jpg",
 		"markers": [
 			{
 				"color": "#838891",
