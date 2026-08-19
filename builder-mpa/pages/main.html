@@ -15,12 +15,17 @@
 <meta name="msapplication-TileColor" content="#ffffff"/>
 <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 <meta name="theme-color" content="#ffffff"/>
+<meta name="description" content="Сборка верстки MPA проекта на barba.js + vue.js"/>
 <link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 		<title>Page Main</title>
-		<script type="module" crossorigin src="../index-Cv-jgapO.js"></script>
-		<link rel="stylesheet" crossorigin href="../index-rqQSV-kj.css">
+		<script type="module" crossorigin src="../script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
+		<script type="module" crossorigin src="../script/chunk-vendor-D8zPhSF-.js"></script>
+		<script type="module" crossorigin src="../script/chunk-helpers-XKdOM882.js"></script>
+		<script type="module" crossorigin src="../script/chunk-index-B36ZivwZ.js"></script>
+		<link rel="stylesheet" crossorigin href="../style/vendor-D-yINyhH.css">
+		<link rel="stylesheet" crossorigin href="../style/index-BP63s8MK.css">
 	</head>
 	
 <body class="wrapper" data-barba="wrapper">
@@ -68,7 +73,7 @@
         <div class="container">
           <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="../" aria-label="Главная страница"><img class="header-logo__icon" src="../images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="../images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
           <div class="header__search">
-            <form class="search js-search" action="/search/" role="search">
+            <form class="search js-search" action="../pages/search/ role="search">
               <div class="search__layer js-search__layer" aria-hidden="true"></div>
               <div class="search__box">
                 <div class="search__control js-search__control">
@@ -88,9 +93,9 @@
           </div>
           <div class="header-controll">
             <div class="header-control__item">
-              <button class="header-control__button js-modal-open" type="button" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
+              <button class="header-control__button js-modal-open" type="button" aria-label="Авторизация" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
             </div>
-            <div class="header-control__item"><a class="header-control__button" href="#"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
+            <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Сравнение товаров"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
             <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Избранное, 8 товаров"><span class="header-controll__icon"><i class="icon icon-favorite" aria-hidden="true"></i><span class="header-control__count">8</span></span><span class="header-controll__name">Избранное</span></a></div>
             <div class="header-control__item dropdown js-dropdown" data-dropdown="click">
               <button class="header-control__button js-dropdown__button" type="button" aria-label="Корзина 3 товара" aria-haspopup="listbox" aria-expanded="false" aria-controls="header-checkout"><span class="header-controll__icon"><i class="icon icon-cart" aria-hidden="true"></i><span class="header-control__count">3</span></span><span class="header-controll__name">Корзина</span></button>
@@ -103,7 +108,7 @@
       </div>
       <div class="header-menu">
         <div class="container">
-          <form class="search js-search" action="/search/" role="search">
+          <form class="search js-search" action="../pages/search/ role="search">
             <div class="search__layer js-search__layer" aria-hidden="true"></div>
             <div class="search__box">
               <div class="search__control js-search__control">
@@ -820,12 +825,16 @@
       <h2 class="visually-hidden">Главные предложения и акции</h2>
       <div class="main-banner">
         <div class="swiper-banner main-banner__swiper js-swiper-banner">
-          <div class="swiper" id="">
+          <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="main-banner__slide">
                   <picture class="picture js-picture main-banner__picture">
-                    <source srcset="../images/swiper-banner-1.webp" type="image/webp"/><img src="../images/swiper-banner-1.jpg" alt="Диван Гувер" loading="lazy"/>
+                    <source srcset="../images/swiper-banner-1--desktopS.webp" media="(min-width: 1280px)" type="image/webp"/>
+                    <source srcset="../images/swiper-banner-1--desktopS.jpg" media="(min-width: 1280px)"/>
+                    <source srcset="../images/swiper-banner-1--tablet.webp" media="(min-width: 768px)" type="image/webp"/>
+                    <source srcset="../images/swiper-banner-1--tablet.jpg" media="(min-width: 768px)"/>
+                    <source srcset="../images/swiper-banner-1.webp" type="image/webp"/><img src="../images/swiper-banner-1.jpg" alt="Диван Гувер" loading="eager"/>
                   </picture>
                   <div class="main-banner__box">
                     <div class="main-banner__content"><span class="main-banner__category">Мебель для дома</span>
@@ -839,7 +848,11 @@
               <div class="swiper-slide">
                 <div class="main-banner__slide">
                   <picture class="picture js-picture main-banner__picture">
-                    <source srcset="../images/swiper-banner-2.webp" type="image/webp"/><img src="../images/swiper-banner-2.jpg" alt="Наушники OYEN MAX" loading="lazy"/>
+                    <source srcset="../images/swiper-banner-2--desktopS.webp" media="(min-width: 1280px)" type="image/webp"/>
+                    <source srcset="../images/swiper-banner-2--desktopS.jpg" media="(min-width: 1280px)"/>
+                    <source srcset="../images/swiper-banner-2--tablet.webp" media="(min-width: 768px)" type="image/webp"/>
+                    <source srcset="../images/swiper-banner-2--tablet.jpg" media="(min-width: 768px)"/>
+                    <source srcset="../images/swiper-banner-2.webp" type="image/webp"/><img src="../images/swiper-banner-2.jpg" alt="Наушники OYEN MAX" loading="eager"/>
                   </picture>
                   <div class="main-banner__box">
                     <div class="main-banner__content"><span class="main-banner__category">ЭЛЕКТРОНИКА</span>
@@ -883,7 +896,7 @@
     <section class="section section--padding">
       <div class="container">
         <div class="section__head">
-          <h2 class="page-title">Популярные категории</h2><a class="section__link" href="../pages/category.html"><span>Все категории</span><i class="icon icon-chevron-right" aria-hidden="true"></i></a>
+          <h2 class="page-title">Популярные категории</h2><a class="section__link" href="../pages/category.html" aria-label="Перейти к списку категорий товаров"><span>Все категории</span><i class="icon icon-chevron-right" aria-hidden="true"></i></a>
         </div>
         <div class="main-category">
           <div class="swiper-carusel js-swiper-category" role="region" aria-label="Карусель категорий">
@@ -898,37 +911,37 @@
                 <div class="swiper-slide swiper-slide--large"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">18 товаров</span>
                     <h3 class="category-preview__name">Мебель для дома</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-1.webp" type="image/webp"/><img src="../images/category-preview-1.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-1.webp" type="image/webp"/><img src="../images/category-preview-1.png" alt="Мебель для дома" loading="lazy"/>
                     </picture></a>
                 </div>
                 <div class="swiper-slide"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">163 товара</span>
                     <h3 class="category-preview__name">Одежда</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-2.webp" type="image/webp"/><img src="../images/category-preview-2.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-2.webp" type="image/webp"/><img src="../images/category-preview-2.png" alt="Одежда" loading="lazy"/>
                     </picture></a>
                 </div>
                 <div class="swiper-slide"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">46 товаров</span>
                     <h3 class="category-preview__name">Косметика</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-3.webp" type="image/webp"/><img src="../images/category-preview-3.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-3.webp" type="image/webp"/><img src="../images/category-preview-3.png" alt="Косметика" loading="lazy"/>
                     </picture></a>
                 </div>
                 <div class="swiper-slide"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">7 товаров</span>
                     <h3 class="category-preview__name">Сантехника</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-4.webp" type="image/webp"/><img src="../images/category-preview-4.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-4.webp" type="image/webp"/><img src="../images/category-preview-4.png" alt="Сантехника" loading="lazy"/>
                     </picture></a>
                 </div>
                 <div class="swiper-slide"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">131 товар</span>
                     <h3 class="category-preview__name">Обувь</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-5.webp" type="image/webp"/><img src="../images/category-preview-5.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-5.webp" type="image/webp"/><img src="../images/category-preview-5.png" alt="Обувь" loading="lazy"/>
                     </picture></a>
                 </div>
                 <div class="swiper-slide swiper-slide--large"><a class="category-preview" href="../pages/catalog.html" aria-label="Перейти к категории товаров" role="listitem"><span class="category-preview__quantity">86 товаров</span>
                     <h3 class="category-preview__name">Электроника</h3>
                     <picture class="picture js-picture">
-                      <source srcset="../images/category-preview-6.webp" type="image/webp"/><img src="../images/category-preview-6.png" alt="" loading="lazy"/>
+                      <source srcset="../images/category-preview-6.webp" type="image/webp"/><img src="../images/category-preview-6.png" alt="Электроника" loading="lazy"/>
                     </picture></a>
                 </div>
               </div>
@@ -941,42 +954,44 @@
     <section class="section section--padding section--color">
       <div class="container">
         <h2 class="page-title">Наш блог</h2>
-        <div class="main-blog" role="list" aria-label="Последние статьи">
-          <div class="main-blog__col-md">
-            <article class="blog-card blog-card--big" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
-                <picture class="picture js-picture">
-                  <source srcset="../images/main-banner-3.webp" type="image/webp"/><img src="../images/main-banner-3.jpg" alt="Скидки до 30% на все коллекции" loading="lazy"/>
-                </picture></a>
-              <div class="blog-card__content"><a class="blog-card__category" href="#">Акции</a>
-                <h3 class="blog-card__title">Скидки до 30% на все коллекции</h3>
-                <p class="blog-card__text">Осенняя распродажа началась! Теперь самые трендовые образы доступны со скидками до -30%. Вдохновляйтесь.</p>
-                <time class="blog-card__date" datetime="2026-10-06">06 октября 2026</time>
-              </div>
-            </article>
-          </div>
-          <div class="main-blog__col-sm">
-            <article class="blog-card" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
-                <picture class="picture js-picture">
-                  <source srcset="../images/main-banner-1.webp" type="image/webp"/><img src="../images/main-banner-1.jpg" alt="Диван Гувер" loading="lazy"/>
-                </picture></a>
-              <div class="blog-card__content"><a class="blog-card__category" href="#">Советы покупателям</a>
-                <h3 class="blog-card__title">Диван Гувер</h3>
-                <p class="blog-card__text">Осенняя распродажа началась! Теперь самые трендовые образы доступны со скидками до -30%. Вдохновляйтесь.</p>
-                <time class="blog-card__date" datetime="2027-01-22">22 января 2027</time>
-              </div>
-            </article>
-          </div>
-          <div class="main-blog__col-sm">
-            <article class="blog-card blog-card--transparent" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
-                <picture class="picture js-picture">
-                  <source srcset="../images/main-banner-2.webp" type="image/webp"/><img src="../images/main-banner-2.jpg" alt="Беспроводные наушники OYEN MAX" loading="lazy"/>
-                </picture></a>
-              <div class="blog-card__content"><a class="blog-card__category" href="#">Обзоры</a>
-                <h3 class="blog-card__title">Беспроводные наушники OYEN MAX</h3>
-                <p class="blog-card__text">Представляем обзор беспроводных наушников OYEN MAX: преимущества, виды и критерии выбора. Узнайте, как выбрать лучшие наушники для вашего смартфона и наслаждайтесь свободой движения и стильным дизайном!</p>
-                <time class="blog-card__date" datetime="2027-02-12">12 февраля 2027</time>
-              </div>
-            </article>
+        <div class="main-blog" role="region" aria-label="Последние статьи">
+          <div class="main-blog__row" role="list">
+            <div class="main-blog__col-md">
+              <article class="blog-card blog-card--big" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
+                  <picture class="picture js-picture">
+                    <source srcset="../images/main-banner-3.webp" type="image/webp"/><img src="../images/main-banner-3.jpg" alt="Скидки до 30% на все коллекции" loading="lazy"/>
+                  </picture></a>
+                <div class="blog-card__content"><a class="blog-card__category" href="#">Акции</a>
+                  <h3 class="blog-card__title">Скидки до 30% на все коллекции</h3>
+                  <p class="blog-card__text">Осенняя распродажа началась! Теперь самые трендовые образы доступны со скидками до -30%. Вдохновляйтесь.</p>
+                  <time class="blog-card__date" datetime="2026-10-06">06 октября 2026</time>
+                </div>
+              </article>
+            </div>
+            <div class="main-blog__col-sm">
+              <article class="blog-card" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
+                  <picture class="picture js-picture">
+                    <source srcset="../images/main-banner-1.webp" type="image/webp"/><img src="../images/main-banner-1.jpg" alt="Диван Гувер" loading="lazy"/>
+                  </picture></a>
+                <div class="blog-card__content"><a class="blog-card__category" href="#">Советы покупателям</a>
+                  <h3 class="blog-card__title">Диван Гувер</h3>
+                  <p class="blog-card__text">Осенняя распродажа началась! Теперь самые трендовые образы доступны со скидками до -30%. Вдохновляйтесь.</p>
+                  <time class="blog-card__date" datetime="2027-01-22">22 января 2027</time>
+                </div>
+              </article>
+            </div>
+            <div class="main-blog__col-sm">
+              <article class="blog-card blog-card--transparent" role="listitem"><a class="blog-card__preview" href="#" aria-label="Перейти к полной записи">
+                  <picture class="picture js-picture">
+                    <source srcset="../images/main-banner-2.webp" type="image/webp"/><img src="../images/main-banner-2.jpg" alt="Беспроводные наушники OYEN MAX" loading="lazy"/>
+                  </picture></a>
+                <div class="blog-card__content"><a class="blog-card__category" href="#">Обзоры</a>
+                  <h3 class="blog-card__title">Беспроводные наушники OYEN MAX</h3>
+                  <p class="blog-card__text">Представляем обзор беспроводных наушников OYEN MAX: преимущества, виды и критерии выбора. Узнайте, как выбрать лучшие наушники для вашего смартфона и наслаждайтесь свободой движения и стильным дизайном!</p>
+                  <time class="blog-card__date" datetime="2027-02-12">12 февраля 2027</time>
+                </div>
+              </article>
+            </div>
           </div><a class="main-blog__more button button--outline" href="#">Смотреть все записи</a>
         </div>
       </div>
@@ -984,6 +999,8 @@
     <section class="section">
       <h2 class="visually-hidden">Специальное предложение месяца</h2><a class="main-promo" href="#">
         <picture class="picture js-picture">
+          <source srcset="../images/promo--desktopS.webp" media="(min-width: 1280px)" type="image/webp"/>
+          <source srcset="../images/promo--desktopS.jpg" media="(min-width: 1280px)"/>
           <source srcset="../images/promo--tablet.webp" media="(min-width: 768px)" type="image/webp"/>
           <source srcset="../images/promo--tablet.jpg" media="(min-width: 768px)"/>
           <source srcset="../images/promo.webp" type="image/webp"/><img src="../images/promo.jpg" alt="Guliver, новинка месяца от Vita. От 143 990 ₽" loading="lazy"/>
@@ -1005,7 +1022,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#c4d9bf;" aria-label="Аватар пользователя">A</div>
+                      <div class="reviews-card__avatar" style="background:#c4d9bf;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">A</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-07-09">09.07.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1021,7 +1038,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#396297;" aria-label="Аватар пользователя">G</div>
+                      <div class="reviews-card__avatar" style="background:#396297;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">G</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-08-02">02.08.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1037,7 +1054,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#e6e957;" aria-label="Аватар пользователя">N</div>
+                      <div class="reviews-card__avatar" style="background:#e6e957;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">N</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-08-14">14.08.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1053,7 +1070,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#975b60;" aria-label="Аватар пользователя">W</div>
+                      <div class="reviews-card__avatar" style="background:#975b60;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">W</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-08-21">21.08.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1069,7 +1086,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#5c7024;" aria-label="Аватар пользователя">N</div>
+                      <div class="reviews-card__avatar" style="background:#5c7024;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">N</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-09-01">01.09.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1085,7 +1102,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#c4d9bf;" aria-label="Аватар пользователя">A</div>
+                      <div class="reviews-card__avatar" style="background:#c4d9bf;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">A</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-09-06">06.09.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1101,7 +1118,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#9b3a42;" aria-label="Аватар пользователя">W</div>
+                      <div class="reviews-card__avatar" style="background:#9b3a42;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">W</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-10-02">02.10.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>
@@ -1117,7 +1134,7 @@
                 <div class="swiper-slide">
                   <article class="reviews-card" role="listitem">
                     <header class="reviews-card__header">
-                      <div class="reviews-card__avatar" style="background:#396297;" aria-label="Аватар пользователя">G</div>
+                      <div class="reviews-card__avatar" style="background:#396297;"><span class="visually-hidden">Аватар пользователя</span><span aria-hidden="true">G</span></div>
                       <div class="reviews-card__info">
                         <time class="reviews-card__date" datetime="2026-10-06">06.10.2026</time><span class="reviews-card__name">Анонимный пользователь</span>
                       </div>

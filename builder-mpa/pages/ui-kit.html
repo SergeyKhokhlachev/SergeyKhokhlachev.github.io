@@ -15,12 +15,17 @@
 <meta name="msapplication-TileColor" content="#ffffff"/>
 <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 <meta name="theme-color" content="#ffffff"/>
+<meta name="description" content="Сборка верстки MPA проекта на barba.js + vue.js"/>
 <link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 		<title>Page UI Kit</title>
-		<script type="module" crossorigin src="../index-Cv-jgapO.js"></script>
-		<link rel="stylesheet" crossorigin href="../index-rqQSV-kj.css">
+		<script type="module" crossorigin src="../script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
+		<script type="module" crossorigin src="../script/chunk-vendor-D8zPhSF-.js"></script>
+		<script type="module" crossorigin src="../script/chunk-helpers-XKdOM882.js"></script>
+		<script type="module" crossorigin src="../script/chunk-index-B36ZivwZ.js"></script>
+		<link rel="stylesheet" crossorigin href="../style/vendor-D-yINyhH.css">
+		<link rel="stylesheet" crossorigin href="../style/index-BP63s8MK.css">
 	</head>
 	
 <body class="wrapper" data-barba="wrapper">
@@ -68,7 +73,7 @@
         <div class="container">
           <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="../" aria-label="Главная страница"><img class="header-logo__icon" src="../images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="../images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
           <div class="header__search">
-            <form class="search js-search" action="/search/" role="search">
+            <form class="search js-search" action="../pages/search/" role="search">
               <div class="search__layer js-search__layer" aria-hidden="true"></div>
               <div class="search__box">
                 <div class="search__control js-search__control">
@@ -88,9 +93,9 @@
           </div>
           <div class="header-controll">
             <div class="header-control__item">
-              <button class="header-control__button js-modal-open" type="button" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
+              <button class="header-control__button js-modal-open" type="button" aria-label="Авторизация" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
             </div>
-            <div class="header-control__item"><a class="header-control__button" href="#"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
+            <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Сравнение товаров"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
             <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Избранное, 8 товаров"><span class="header-controll__icon"><i class="icon icon-favorite" aria-hidden="true"></i><span class="header-control__count">8</span></span><span class="header-controll__name">Избранное</span></a></div>
             <div class="header-control__item dropdown js-dropdown" data-dropdown="click">
               <button class="header-control__button js-dropdown__button" type="button" aria-label="Корзина 3 товара" aria-haspopup="listbox" aria-expanded="false" aria-controls="header-checkout"><span class="header-controll__icon"><i class="icon icon-cart" aria-hidden="true"></i><span class="header-control__count">3</span></span><span class="header-controll__name">Корзина</span></button>
@@ -103,7 +108,7 @@
       </div>
       <div class="header-menu">
         <div class="container">
-          <form class="search js-search" action="/search/" role="search">
+          <form class="search js-search" action="../pages/search/" role="search">
             <div class="search__layer js-search__layer" aria-hidden="true"></div>
             <div class="search__box">
               <div class="search__control js-search__control">
@@ -1275,7 +1280,7 @@
                     </label>
                     <div class="form-select">
                       <input class="js-form-select" id="ui-native-select" name="select" value="" required="required" type="hidden"/>
-                      <button class="form-select__control placeholder js-form-select__control" type="button"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-chevron-down form-select__icon" aria-hidden="true"></i>
+                      <button class="form-select__control placeholder js-form-select__control" type="button" role="combobox"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-chevron-down form-select__icon" aria-hidden="true"></i>
                       </button>
                       <ul class="form-select__dropdown js-form-select__dropdown" role="listbox" tabindex="-1">
                         <li class="form-select__option js-form-select__option" role="option" data-value="courier">Курьер</li>

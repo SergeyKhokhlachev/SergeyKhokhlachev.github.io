@@ -15,12 +15,17 @@
 <meta name="msapplication-TileColor" content="#ffffff"/>
 <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 <meta name="theme-color" content="#ffffff"/>
+<meta name="description" content="Сборка верстки MPA проекта на barba.js + vue.js"/>
 <link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 <link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 		<title>Page Catalog</title>
-		<script type="module" crossorigin src="../index-Cv-jgapO.js"></script>
-		<link rel="stylesheet" crossorigin href="../index-rqQSV-kj.css">
+		<script type="module" crossorigin src="../script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
+		<script type="module" crossorigin src="../script/chunk-vendor-D8zPhSF-.js"></script>
+		<script type="module" crossorigin src="../script/chunk-helpers-XKdOM882.js"></script>
+		<script type="module" crossorigin src="../script/chunk-index-B36ZivwZ.js"></script>
+		<link rel="stylesheet" crossorigin href="../style/vendor-D-yINyhH.css">
+		<link rel="stylesheet" crossorigin href="../style/index-BP63s8MK.css">
 	</head>
 	
 <body class="wrapper" data-barba="wrapper">
@@ -68,7 +73,7 @@
         <div class="container">
           <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="../" aria-label="Главная страница"><img class="header-logo__icon" src="../images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="../images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
           <div class="header__search">
-            <form class="search js-search" action="/search/" role="search">
+            <form class="search js-search" action="../pages/search/ role="search">
               <div class="search__layer js-search__layer" aria-hidden="true"></div>
               <div class="search__box">
                 <div class="search__control js-search__control">
@@ -88,9 +93,9 @@
           </div>
           <div class="header-controll">
             <div class="header-control__item">
-              <button class="header-control__button js-modal-open" type="button" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
+              <button class="header-control__button js-modal-open" type="button" aria-label="Авторизация" data-modal="#modal-login"><span class="header-controll__icon"><i class="icon icon-profile" aria-hidden="true"></i></span><span class="header-controll__name">Войти</span></button>
             </div>
-            <div class="header-control__item"><a class="header-control__button" href="#"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
+            <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Сравнение товаров"><span class="header-controll__icon"><i class="icon icon-compare" aria-hidden="true"></i></span><span class="header-controll__name">Сравнение</span></a></div>
             <div class="header-control__item"><a class="header-control__button" href="#" aria-label="Избранное, 8 товаров"><span class="header-controll__icon"><i class="icon icon-favorite" aria-hidden="true"></i><span class="header-control__count">8</span></span><span class="header-controll__name">Избранное</span></a></div>
             <div class="header-control__item dropdown js-dropdown" data-dropdown="click">
               <button class="header-control__button js-dropdown__button" type="button" aria-label="Корзина 3 товара" aria-haspopup="listbox" aria-expanded="false" aria-controls="header-checkout"><span class="header-controll__icon"><i class="icon icon-cart" aria-hidden="true"></i><span class="header-control__count">3</span></span><span class="header-controll__name">Корзина</span></button>
@@ -103,7 +108,7 @@
       </div>
       <div class="header-menu">
         <div class="container">
-          <form class="search js-search" action="/search/" role="search">
+          <form class="search js-search" action="../pages/search/ role="search">
             <div class="search__layer js-search__layer" aria-hidden="true"></div>
             <div class="search__box">
               <div class="search__control js-search__control">
@@ -856,8 +861,8 @@
                     </div>
                   </div>
                   <div class="product-filter__block collapse__element active js-collapse__element">
-                    <div class="product-filter__head collapse__button js-collapse__button" aria-expanded="true" aria-controls="filter-categories"><span class="product-filter__name">Категории</span><i class="icon icon-chevron-down collapse__icon" aria-hidden="true"></i>
-                    </div>
+                    <button class="product-filter__head collapse__button js-collapse__button" type="button" aria-expanded="true" aria-controls="filter-categories"><span class="product-filter__name">Категории</span><i class="icon icon-chevron-down collapse__icon" aria-hidden="true"></i>
+                    </button>
                     <ul class="product-filter__list collapse__content" id="filter-categories">
                       <li><a class="product-filter__link" href="#"><span>Комбинезоны и полукомбинезоны</span><span class="product-filter__quantity">(12)</span></a>
                       </li>
@@ -1056,11 +1061,11 @@
         <main class="catalog__main">
           <h2 class="visually-hidden">Список товаров в категории "Одежда"</h2>
           <div class="catalog__head">
-            <div class="catalog__sort js-product-sort">
+            <form class="catalog__sort js-product-sort" novalidate="novalidate">
               <div class="form-element js-form-element">
                 <div class="form-select">
                   <input class="js-form-select" id="catalog-sort" name="sort" value="По популярности" type="hidden"/>
-                  <button class="form-select__control placeholder js-form-select__control" type="button"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-sort form-select__icon" aria-hidden="true"></i>
+                  <button class="form-select__control placeholder js-form-select__control" type="button" role="combobox" aria-label="Выберите значение из списка"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-sort form-select__icon" aria-hidden="true"></i>
                   </button>
                   <ul class="form-select__dropdown js-form-select__dropdown" role="listbox" tabindex="-1">
                     <li class="form-select__option js-form-select__option" role="option" data-value="По популярности">По популярности</li>
@@ -1072,21 +1077,21 @@
                 </div>
                 <div class="form-element__message js-form-element__message"></div>
               </div>
-            </div>
+            </form>
             <button class="catalog__control js-filter-open" type="button" aria-label="Открыть фильтр"><i class="icon icon-filter" aria-hidden="true"></i><span>Фильтр</span>
             </button>
           </div>
           <div class="catalog__row">
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1170,14 +1175,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1233,14 +1238,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1296,14 +1301,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1359,14 +1364,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1422,14 +1427,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1485,14 +1490,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1548,14 +1553,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1611,14 +1616,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1674,14 +1679,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1737,14 +1742,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1800,14 +1805,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1863,14 +1868,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1926,14 +1931,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -1989,14 +1994,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2052,14 +2057,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2115,14 +2120,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2178,14 +2183,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2241,14 +2246,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2304,14 +2309,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2367,14 +2372,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2430,14 +2435,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2493,14 +2498,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2556,14 +2561,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers">
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2619,14 +2624,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2682,14 +2687,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2745,14 +2750,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2808,14 +2813,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2871,14 +2876,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -2934,14 +2939,14 @@
             </div>
             <div class="catalog__col">
               <article class="product-card">
-                <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                   <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
                 </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
-                    <div class="swiper" id="">
+                    <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <div class="product-card__slide">
@@ -3014,102 +3019,102 @@
               <div class="swiper-wrapper" role="list">
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                    <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-1">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Куртка треккинговая North Face" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Куртка треккинговая North Face</h3>
+                        <h3 class="product-short__name" id="product-short-product-1">Куртка треккинговая North Face</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">20 556 ₽</span><span class="product-short__price-old">22 611 ₽</span></div>
                       </div></a>
                   </article>
                 </div>
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                    <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-2">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Рюкзак мембранный мужской Merrell" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Рюкзак мембранный мужской Merrell</h3>
+                        <h3 class="product-short__name" id="product-short-product-2">Рюкзак мембранный мужской Merrell</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">23 306 ₽</span><span class="product-short__price-old">30 297 ₽</span></div>
                       </div></a>
                   </article>
                 </div>
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                    <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-3">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Футболка влагозащитная мужская Merrell" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Футболка влагозащитная мужская Merrell</h3>
+                        <h3 class="product-short__name" id="product-short-product-3">Футболка влагозащитная мужская Merrell</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">17 443 ₽</span><span class="product-short__price-old">21 640 ₽</span></div>
                       </div></a>
                   </article>
                 </div>
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                    <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-4">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Рюкзак спортивный женский Volkl" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Рюкзак спортивный женский Volkl</h3>
+                        <h3 class="product-short__name" id="product-short-product-4">Рюкзак спортивный женский Volkl</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">32 339 ₽</span><span class="product-short__price-old">37 339 ₽</span></div>
                       </div></a>
                   </article>
                 </div>
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite active" type="button" role="checkbox" aria-pressed="aria-pressed" aria-label="Добавить в избранное">
+                    <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-5">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Куртка спортивная женская Salomon" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Куртка спортивная женская Salomon</h3>
+                        <h3 class="product-short__name" id="product-short-product-5">Куртка спортивная женская Salomon</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">12 018 ₽</span><span class="product-short__price-old">16 218 ₽</span></div>
                       </div></a>
                   </article>
                 </div>
                 <div class="swiper-slide">
                   <article class="product-short" role="listitem">
-                    <button class="favorite" type="button" role="checkbox" aria-label="Добавить в избранное">
+                    <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-6">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
-                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="" loading="lazy"/>
+                          <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Шапка спортивная унисекс Columbia" loading="lazy"/>
                         </picture>
                       </div>
                       <div class="product-short__content">
-                        <h3 class="product-short__name">Шапка спортивная унисекс Columbia</h3>
+                        <h3 class="product-short__name" id="product-short-product-6">Шапка спортивная унисекс Columbia</h3>
                         <div class="product-short__coast"><span class="product-short__price-new">11 298 ₽</span><span class="product-short__price-old">13 219 ₽</span></div>
                       </div></a>
                   </article>
