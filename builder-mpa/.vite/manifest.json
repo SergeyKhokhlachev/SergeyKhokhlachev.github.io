@@ -11,8 +11,8 @@
       "_chunk-formatting-B0rSGNJC.js"
     ]
   },
-  "_chunk-form-D68YoUJo.js": {
-    "file": "script/chunk-form-D68YoUJo.js",
+  "_chunk-form-CrqxvP1f.js": {
+    "file": "script/chunk-form-CrqxvP1f.js",
     "name": "form",
     "imports": [
       "_chunk-vendor-D8zPhSF-.js",
@@ -31,8 +31,8 @@
     "file": "script/chunk-helpers-DaAq5qtw.js",
     "name": "helpers"
   },
-  "_chunk-index-jDzQUgDG.js": {
-    "file": "script/chunk-index-jDzQUgDG.js",
+  "_chunk-index-BwT3Q8nk.js": {
+    "file": "script/chunk-index-BwT3Q8nk.js",
     "name": "index",
     "imports": [
       "_chunk-rolldown-runtime-QTnfLwEv.js",
@@ -57,7 +57,7 @@
       "templates/checkout/checkout.js"
     ],
     "css": [
-      "style/index-DJtG95ZM.css"
+      "style/index-4yGcbAso.css"
     ]
   },
   "_chunk-render-or7qyz4Q.js": {
@@ -86,9 +86,9 @@
       "style/vendor-D-yINyhH.css"
     ]
   },
-  "_index-DJtG95ZM.css": {
-    "file": "style/index-DJtG95ZM.css",
-    "src": "_index-DJtG95ZM.css"
+  "_index-4yGcbAso.css": {
+    "file": "style/index-4yGcbAso.css",
+    "src": "_index-4yGcbAso.css"
   },
   "_vendor-D-yINyhH.css": {
     "file": "style/vendor-D-yINyhH.css",
@@ -115,7 +115,7 @@
     ]
   },
   "components/features/checkout/checkout.vue": {
-    "file": "script/chunk-checkout-DyUzICUq.js",
+    "file": "script/chunk-checkout-gVHv8SvH.js",
     "name": "checkout",
     "src": "components/features/checkout/checkout.vue",
     "isDynamicEntry": true,
@@ -124,11 +124,11 @@
       "_chunk-get-cart-Qaea6H6W.js",
       "_chunk-dadata-CbsLzbQg.js",
       "_chunk-helpers-DaAq5qtw.js",
-      "_chunk-form-D68YoUJo.js"
+      "_chunk-form-CrqxvP1f.js"
     ]
   },
   "components/features/common/main-faq/main-faq.vue": {
-    "file": "script/chunk-main-faq-C55t1CKI.js",
+    "file": "script/chunk-main-faq-DkupW1GE.js",
     "name": "main-faq",
     "src": "components/features/common/main-faq/main-faq.vue",
     "isDynamicEntry": true,
@@ -153,13 +153,13 @@
     "isDynamicEntry": true
   },
   "components/features/login/login.vue": {
-    "file": "script/chunk-login-DxoJ4IRg.js",
+    "file": "script/chunk-login-BjO2xAJA.js",
     "name": "login",
     "src": "components/features/login/login.vue",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-vendor-D8zPhSF-.js",
-      "_chunk-form-D68YoUJo.js"
+      "_chunk-form-CrqxvP1f.js"
     ]
   },
   "components/features/search/search.ts": {
@@ -190,14 +190,14 @@
     ]
   },
   "components/features/uikit/uikit-form-vue/uikit-form-vue.vue": {
-    "file": "script/chunk-uikit-form-vue-DzzdybdU.js",
+    "file": "script/chunk-uikit-form-vue-1y9Ew3WL.js",
     "name": "uikit-form-vue",
     "src": "components/features/uikit/uikit-form-vue/uikit-form-vue.vue",
     "isDynamicEntry": true,
     "imports": [
       "_chunk-vendor-D8zPhSF-.js",
       "_chunk-render-or7qyz4Q.js",
-      "_chunk-form-D68YoUJo.js"
+      "_chunk-form-CrqxvP1f.js"
     ]
   },
   "spritemap.svg": {
@@ -205,12 +205,12 @@
     "src": "spritemap.svg"
   },
   "templates/catalog/catalog.js": {
-    "file": "script/chunk-catalog-Bsf-dzxS.js",
+    "file": "script/chunk-catalog-s-pS89dD.js",
     "name": "catalog",
     "src": "templates/catalog/catalog.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js",
+      "_chunk-index-BwT3Q8nk.js",
       "_chunk-vendor-D8zPhSF-.js",
       "_chunk-helpers-DaAq5qtw.js",
       "_chunk-form-BgCNegL4.js",
@@ -228,12 +228,12 @@
     ]
   },
   "templates/checkout/checkout.js": {
-    "file": "script/chunk-checkout-DXYLD13S.js",
+    "file": "script/chunk-checkout-OE21dV7e.js",
     "name": "checkout",
     "src": "templates/checkout/checkout.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js"
+      "_chunk-index-BwT3Q8nk.js"
     ],
     "dynamicImports": [
       "_chunk-vendor-D8zPhSF-.js",
@@ -241,12 +241,12 @@
     ]
   },
   "templates/main/main.js": {
-    "file": "script/chunk-main-BATpB2RJ.js",
+    "file": "script/chunk-main-BGRS5vNb.js",
     "name": "main",
     "src": "templates/main/main.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js",
+      "_chunk-index-BwT3Q8nk.js",
       "_chunk-vendor-D8zPhSF-.js",
       "_chunk-helpers-DaAq5qtw.js",
       "_chunk-swiper-carusel-CZmTLlZS.js"
@@ -257,24 +257,24 @@
     ]
   },
   "templates/product/product.js": {
-    "file": "script/chunk-product-B9O1OPe1.js",
+    "file": "script/chunk-product-C3M6-1vH.js",
     "name": "product",
     "src": "templates/product/product.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js",
+      "_chunk-index-BwT3Q8nk.js",
       "_chunk-vendor-D8zPhSF-.js",
       "_chunk-helpers-DaAq5qtw.js",
       "_chunk-swiper-carusel-CZmTLlZS.js"
     ]
   },
   "templates/shops/shops.js": {
-    "file": "script/chunk-shops-vLY4yLXC.js",
+    "file": "script/chunk-shops-RcCW8clR.js",
     "name": "shops",
     "src": "templates/shops/shops.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js",
+      "_chunk-index-BwT3Q8nk.js",
       "_chunk-helpers-DaAq5qtw.js",
       "_chunk-swiper-carusel-CZmTLlZS.js"
     ],
@@ -284,12 +284,12 @@
     ]
   },
   "templates/ui-kit/ui-kit.js": {
-    "file": "script/chunk-ui-kit-CXWLWzxm.js",
+    "file": "script/chunk-ui-kit-8tlyaSPi.js",
     "name": "ui-kit",
     "src": "templates/ui-kit/ui-kit.js",
     "isDynamicEntry": true,
     "imports": [
-      "_chunk-index-jDzQUgDG.js",
+      "_chunk-index-BwT3Q8nk.js",
       "_chunk-helpers-DaAq5qtw.js",
       "_chunk-render-or7qyz4Q.js",
       "_chunk-form-BgCNegL4.js"
