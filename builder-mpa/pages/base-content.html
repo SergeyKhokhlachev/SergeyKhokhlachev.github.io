@@ -16,16 +16,16 @@
 <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 <meta name="theme-color" content="#ffffff"/>
 <meta name="description" content="Сборка верстки MPA проекта на barba.js + vue.js"/>
-<link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
-<link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
-<link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 		<title>Base Content</title>
-		<script type="module" crossorigin src="../script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
-		<script type="module" crossorigin src="../script/chunk-vendor-D8zPhSF-.js"></script>
-		<script type="module" crossorigin src="../script/chunk-helpers-XKdOM882.js"></script>
-		<script type="module" crossorigin src="../script/chunk-index-B36ZivwZ.js"></script>
-		<link rel="stylesheet" crossorigin href="../style/vendor-D-yINyhH.css">
-		<link rel="stylesheet" crossorigin href="../style/index-BP63s8MK.css">
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-vendor-D8zPhSF-.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-helpers-DaAq5qtw.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-index-jDzQUgDG.js"></script>
+		<link rel="stylesheet" crossorigin href="/builder-mpa/style/vendor-D-yINyhH.css">
+		<link rel="stylesheet" crossorigin href="/builder-mpa/style/index-DJtG95ZM.css">
 	</head>
 	
 <body class="wrapper" data-barba="wrapper">
@@ -37,13 +37,6 @@
           <div class="location js-location">
             <button class="location__button js-modal-open" type="button" data-modal="#modal-location"><span class="location__label">Ваш город</span><i class="icon icon-location" aria-hidden="true"></i><span class="location__value js-location-value">Москва</span>
             </button>
-            <div class="location__dropdown js-location-dropdown" aria-label="Подтверждение города">
-              <div class="location__title">Ваш город <span class='js-location-define'></span>?</div>
-              <div class="location__action">
-                <button class="button button--outline js-location-modal" type="button">Выбрать другой</button>
-                <button class="button button--primary js-location-approve" type="button">Да, всё верно</button>
-              </div>
-            </div>
           </div>
           <nav class="header-navigate">
             <div class="header-navigate__category dropdown js-dropdown"><a class="header-navigate__link dropdown__button js-dropdown__button" href="#" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-company-dropdown">О компании<i class="icon icon-chevron-down dropdown__icon" aria-hidden="true"></i></a>
@@ -71,9 +64,9 @@
       </div>
       <div class="header__main">
         <div class="container">
-          <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="../" aria-label="Главная страница"><img class="header-logo__icon" src="../images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="../images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
+          <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="/builder-mpa/" aria-label="Главная страница"><img class="header-logo__icon" src="/builder-mpa/images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="/builder-mpa/images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
           <div class="header__search">
-            <form class="search js-search" action="/builder-mpa/ages/search/" role="search">
+            <form class="search js-search" action="/builder-mpa/pages/search/" role="search">
               <div class="search__layer js-search__layer" aria-hidden="true"></div>
               <div class="search__box">
                 <div class="search__control js-search__control">
@@ -108,7 +101,7 @@
       </div>
       <div class="header-menu">
         <div class="container">
-          <form class="search js-search" action="/builder-mpa/ages/search/" role="search">
+          <form class="search js-search" action="/builder-mpa/pages/search/" role="search">
             <div class="search__layer js-search__layer" aria-hidden="true"></div>
             <div class="search__box">
               <div class="search__control js-search__control">
@@ -202,11 +195,11 @@
             <div class="header-menu__text">Пн - Вс: 11.00 - 19.00</div>
           </div>
           <ul class="header-social">
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="YouTube"><img src="../images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Instagram"><img src="../images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Whatsapp"><img src="../images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="VK"><img src="../images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Telegram"><img src="../images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="YouTube"><img src="/builder-mpa/images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Instagram"><img src="/builder-mpa/images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Whatsapp"><img src="/builder-mpa/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="VK"><img src="/builder-mpa/images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Telegram"><img src="/builder-mpa/images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
           </ul>
           <div class="header-menu__copyright">
             <p>2026 © Интернет-магазин</p>
@@ -892,9 +885,11 @@
       <p class="subscribe__subtitle">Подпишитесь на нашу рассылку и получите промокод на скидку 10%</p>
       <form class="subscribe__form js-subscribe__form" novalidate="novalidate">
         <div class="form-element js-form-element">
-          <div class="form-element">
-            <input class="form-input js-form-input" id="subscribe-email" type="email" name="email" placeholder="Введите Email" autocomplete="email" required="required" data-message="email" data-rule="email"/>
-          </div>
+          <label>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="subscribe-email" type="email" name="email" placeholder="Введите Email" autocomplete="email" required="required" data-message="email" data-rule="email"/>
+            </div>
+          </label>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <button class="button button--outline subscribe__button js-subscribe__button" type="submit" disabled="true"><span>Подписаться<i class="icon icon-send" aria-hidden="true"></i></span></button>
@@ -958,11 +953,11 @@
         <div class="footer__secondary">
           <nav aria-label="Социальные сети">
             <ul class="footer__social-list">
-              <li><a href="#" target="_blank" aria-label="YouTube"><img src="../images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Instagram"><img src="../images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="../images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="VK"><img src="../images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Telegram"><img src="../images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="YouTube"><img src="/builder-mpa/images/icon-youtube.svg" alt="YouTube" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Instagram"><img src="/builder-mpa/images/icon-instagram.svg" alt="Instagram" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="/builder-mpa/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="VK"><img src="/builder-mpa/images/icon-vk.svg" alt="VK" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Telegram"><img src="/builder-mpa/images/icon-telegram.svg" alt="Telegram" width="22" height="22" loading="lazy"/></a></li>
             </ul>
           </nav>
           <div class="footer__legal">
@@ -983,10 +978,10 @@
           </ul>
         </nav>
         <ul class="footer__payment">
-          <li><img src="../images/mir.svg" alt="Платёжная система Мир" width="50" height="15"/></li>
-          <li><img src="../images/visa.svg" alt="Платёжная система Visa" width="44" height="15"/></li>
-          <li><img src="../images/mastercard.svg" alt="Платёжная система Mastercard" width="34" height="21"/></li>
-          <li><img src="../images/qiwi.svg" alt="Платёжный сервис QIWI" width="56" height="21"/></li>
+          <li><img src="/builder-mpa/images/mir.svg" alt="Платёжная система Мир" width="50" height="15" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/visa.svg" alt="Платёжная система Visa" width="44" height="15" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/mastercard.svg" alt="Платёжная система Mastercard" width="34" height="21" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/qiwi.svg" alt="Платёжный сервис QIWI" width="56" height="21" loading="lazy"/></li>
         </ul>
       </div>
     </div>
@@ -1004,19 +999,19 @@
       <div class="modal-window__text">Если вы не желаете дожидаться ответа по нашей Горячей Линии, то просто оставьте свой номер телефона и мы сами вам перезвоним</div>
       <form class="callback-form js-callback" novalidate="novalidate">
         <div class="form-element js-form-element">
-          <label class="form-element__label"><span>Имя</span><span class="form-element__required" aria-hidden="true">*</span>
+          <label><span class="form-element__label">Имя</span><span class="form-element__required" aria-hidden="true">*</span>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="callback-name" type="text" name="name" placeholder="Введите Имя" autocomplete="given-name" required="required" data-message="text" data-rule="text"/>
+            </div>
           </label>
-          <div class="form-element">
-            <input class="form-input js-form-input" id="callback-name" type="text" name="name" placeholder="Введите Имя" autocomplete="given-name" required="required" data-message="text" data-rule="text"/>
-          </div>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <div class="form-element js-form-element">
-          <label class="form-element__label"><span>Номер телефона</span><span class="form-element__required" aria-hidden="true">*</span>
+          <label><span class="form-element__label">Номер телефона</span><span class="form-element__required" aria-hidden="true">*</span>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="callback-tel" type="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="tel" required="required" maxlength="18" data-message="tel" data-rule="tel"/>
+            </div>
           </label>
-          <div class="form-element">
-            <input class="form-input js-form-input" id="callback-tel" type="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="tel" required="required" maxlength="18" data-message="tel" data-rule="tel"/>
-          </div>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <button class="button button--primary callback-form__button js-callback__button" type="submit"><span>Отправить заявку</span></button>

@@ -16,16 +16,16 @@
 <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
 <meta name="theme-color" content="#ffffff"/>
 <meta name="description" content="Сборка верстки MPA проекта на barba.js + vue.js"/>
-<link rel="preload" href="../fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
-<link rel="preload" href="../fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
-<link rel="preload" href="../fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
+<link rel="preload" href="/builder-mpa/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="crossorigin"/>
 		<title>Page Catalog</title>
-		<script type="module" crossorigin src="../script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
-		<script type="module" crossorigin src="../script/chunk-vendor-D8zPhSF-.js"></script>
-		<script type="module" crossorigin src="../script/chunk-helpers-XKdOM882.js"></script>
-		<script type="module" crossorigin src="../script/chunk-index-B36ZivwZ.js"></script>
-		<link rel="stylesheet" crossorigin href="../style/vendor-D-yINyhH.css">
-		<link rel="stylesheet" crossorigin href="../style/index-BP63s8MK.css">
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-rolldown-runtime-QTnfLwEv.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-vendor-D8zPhSF-.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-helpers-DaAq5qtw.js"></script>
+		<script type="module" crossorigin src="/builder-mpa/script/chunk-index-jDzQUgDG.js"></script>
+		<link rel="stylesheet" crossorigin href="/builder-mpa/style/vendor-D-yINyhH.css">
+		<link rel="stylesheet" crossorigin href="/builder-mpa/style/index-DJtG95ZM.css">
 	</head>
 	
 <body class="wrapper" data-barba="wrapper">
@@ -37,13 +37,6 @@
           <div class="location js-location">
             <button class="location__button js-modal-open" type="button" data-modal="#modal-location"><span class="location__label">Ваш город</span><i class="icon icon-location" aria-hidden="true"></i><span class="location__value js-location-value">Москва</span>
             </button>
-            <div class="location__dropdown js-location-dropdown" aria-label="Подтверждение города">
-              <div class="location__title">Ваш город <span class='js-location-define'></span>?</div>
-              <div class="location__action">
-                <button class="button button--outline js-location-modal" type="button">Выбрать другой</button>
-                <button class="button button--primary js-location-approve" type="button">Да, всё верно</button>
-              </div>
-            </div>
           </div>
           <nav class="header-navigate">
             <div class="header-navigate__category dropdown js-dropdown"><a class="header-navigate__link dropdown__button js-dropdown__button" href="#" aria-haspopup="menu" aria-expanded="false" aria-controls="nav-company-dropdown">О компании<i class="icon icon-chevron-down dropdown__icon" aria-hidden="true"></i></a>
@@ -71,9 +64,9 @@
       </div>
       <div class="header__main">
         <div class="container">
-          <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="../" aria-label="Главная страница"><img class="header-logo__icon" src="../images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="../images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
+          <button class="header-hamburger js-header-toggle" type="button" aria-expanded="false" aria-label="Открыть каталог"><span class="header-hamburger__box"><i class="icon icon-menu header-hamburger__list" aria-hidden="true"></i><i class="icon icon-close header-hamburger__close" aria-hidden="true"></i></span><span class="header-hamburger__text">Каталог</span></button><a class="header-logo" href="/builder-mpa/" aria-label="Главная страница"><img class="header-logo__icon" src="/builder-mpa/images/logo-icon.svg" alt="logo" width="34" height="34"/><img class="header-logo__text" src="/builder-mpa/images/logo-text.svg" alt="Компоненты" width="148" height="34"/></a>
           <div class="header__search">
-            <form class="search js-search" action="/builder-mpa/ages/search/" role="search">
+            <form class="search js-search" action="/builder-mpa/pages/search/" role="search">
               <div class="search__layer js-search__layer" aria-hidden="true"></div>
               <div class="search__box">
                 <div class="search__control js-search__control">
@@ -108,7 +101,7 @@
       </div>
       <div class="header-menu">
         <div class="container">
-          <form class="search js-search" action="/builder-mpa/ages/search/" role="search">
+          <form class="search js-search" action="/builder-mpa/pages/search/" role="search">
             <div class="search__layer js-search__layer" aria-hidden="true"></div>
             <div class="search__box">
               <div class="search__control js-search__control">
@@ -202,11 +195,11 @@
             <div class="header-menu__text">Пн - Вс: 11.00 - 19.00</div>
           </div>
           <ul class="header-social">
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="YouTube"><img src="../images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Instagram"><img src="../images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Whatsapp"><img src="../images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="VK"><img src="../images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
-            <li><a class="header-social__link" href="#" target="_blank" aria-label="Telegram"><img src="../images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="YouTube"><img src="/builder-mpa/images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Instagram"><img src="/builder-mpa/images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Whatsapp"><img src="/builder-mpa/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="VK"><img src="/builder-mpa/images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
+            <li><a class="header-social__link" href="#" target="_blank" aria-label="Telegram"><img src="/builder-mpa/images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
           </ul>
           <div class="header-menu__copyright">
             <p>2026 © Интернет-магазин</p>
@@ -823,9 +816,9 @@
     <nav class="breadcrumbs" aria-label="Навигация по разделам">
       <div class="container">
         <ol class="breadcrumbs__list">
-          <li class="breadcrumbs__item"><a href="../pages/main.html">Главная</a><i class="icon icon-chevron-right" aria-hidden="true"></i>
+          <li class="breadcrumbs__item"><a href="/builder-mpa/pages/main.html">Главная</a><i class="icon icon-chevron-right" aria-hidden="true"></i>
           </li>
-          <li class="breadcrumbs__item"><a href="../pages/category.html">Каталог</a><i class="icon icon-chevron-right" aria-hidden="true"></i>
+          <li class="breadcrumbs__item"><a href="/builder-mpa/pages/category.html">Каталог</a><i class="icon icon-chevron-right" aria-hidden="true"></i>
           </li>
           <li class="breadcrumbs__item"><span aria-current="page">Одежда</span>
           </li>
@@ -1063,18 +1056,20 @@
           <div class="catalog__head">
             <form class="catalog__sort js-product-sort" novalidate="novalidate">
               <div class="form-element js-form-element">
-                <div class="form-select">
-                  <input class="js-form-select" id="catalog-sort" name="sort" value="По популярности" type="hidden"/>
-                  <button class="form-select__control placeholder js-form-select__control" type="button" role="combobox" aria-label="Выберите значение из списка"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-sort form-select__icon" aria-hidden="true"></i>
-                  </button>
-                  <ul class="form-select__dropdown js-form-select__dropdown" role="listbox" tabindex="-1">
-                    <li class="form-select__option js-form-select__option" role="option" data-value="По популярности">По популярности</li>
-                    <li class="form-select__option js-form-select__option" role="option" data-value="Новинки">Новинки</li>
-                    <li class="form-select__option js-form-select__option" role="option" data-value="Сначала дешевые">Сначала дешевые</li>
-                    <li class="form-select__option js-form-select__option" role="option" data-value="Сначала дорогие">Сначала дорогие</li>
-                    <li class="form-select__option js-form-select__option" role="option" data-value="Высокий рейтинг">Высокий рейтинг</li>
-                  </ul>
-                </div>
+                <label>
+                  <div class="form-select">
+                    <input class="js-form-select" id="catalog-sort" name="sort" value="По популярности" type="hidden"/>
+                    <button class="form-select__control placeholder js-form-select__control" type="button" role="combobox" aria-label="Выберите значение из списка"><span class="form-select__placeholder">Выберите из списка...</span><span class="form-select__vue js-form-select__result"></span><i class="icon icon-sort form-select__icon" aria-hidden="true"></i>
+                    </button>
+                    <ul class="form-select__dropdown js-form-select__dropdown" role="listbox" tabindex="-1">
+                      <li class="form-select__option js-form-select__option" role="option" data-value="По популярности">По популярности</li>
+                      <li class="form-select__option js-form-select__option" role="option" data-value="Новинки">Новинки</li>
+                      <li class="form-select__option js-form-select__option" role="option" data-value="Сначала дешевые">Сначала дешевые</li>
+                      <li class="form-select__option js-form-select__option" role="option" data-value="Сначала дорогие">Сначала дорогие</li>
+                      <li class="form-select__option js-form-select__option" role="option" data-value="Высокий рейтинг">Высокий рейтинг</li>
+                    </ul>
+                  </div>
+                </label>
                 <div class="form-element__message js-form-element__message"></div>
               </div>
             </form>
@@ -1089,7 +1084,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1165,7 +1160,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Куртка треккинговая North Face</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Куртка треккинговая North Face</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">20 556 ₽</span><span class="product-card__price-old">22 611 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1180,7 +1175,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1228,7 +1223,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Рюкзак мембранный мужской Merrell</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Рюкзак мембранный мужской Merrell</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">23 306 ₽</span><span class="product-card__price-old">30 297 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1243,7 +1238,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1291,7 +1286,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Футболка влагозащитная мужская Merrell</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Футболка влагозащитная мужская Merrell</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">17 443 ₽</span><span class="product-card__price-old">21 640 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1306,7 +1301,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1354,7 +1349,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Рюкзак спортивный женский Volkl</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Рюкзак спортивный женский Volkl</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">32 339 ₽</span><span class="product-card__price-old">37 339 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1369,7 +1364,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1417,7 +1412,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Куртка спортивная женская Salomon</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Куртка спортивная женская Salomon</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">12 018 ₽</span><span class="product-card__price-old">16 218 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1432,7 +1427,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1480,7 +1475,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка спортивная унисекс Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка спортивная унисекс Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">11 298 ₽</span><span class="product-card__price-old">13 219 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1495,7 +1490,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1543,7 +1538,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Футболка зимняя мужская Kappa</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Футболка зимняя мужская Kappa</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">26 148 ₽</span><span class="product-card__price-old">31 318 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1558,7 +1553,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1606,7 +1601,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Перчатки мембранные унисекс Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Перчатки мембранные унисекс Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">19 007 ₽</span><span class="product-card__price-old">19 905 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1621,7 +1616,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1669,7 +1664,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Перчатки утепленные унисекс Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Перчатки утепленные унисекс Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">29 502 ₽</span><span class="product-card__price-old">32 502 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1684,7 +1679,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1732,7 +1727,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Куртка треккинговая унисекс North Face</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Куртка треккинговая унисекс North Face</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">12 384 ₽</span><span class="product-card__price-old">14 804 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1747,7 +1742,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1795,7 +1790,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Ботинки влагозащитные мужские Kappa</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Ботинки влагозащитные мужские Kappa</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">9 725 ₽</span><span class="product-card__price-old">12 354 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1810,7 +1805,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1858,7 +1853,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Куртка влагозащитная унисекс Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Куртка влагозащитная унисекс Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">11 666 ₽</span><span class="product-card__price-old">14 764 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1873,7 +1868,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1921,7 +1916,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Перчатки влагозащитные унисекс Volkl</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Перчатки влагозащитные унисекс Volkl</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">7 518 ₽</span><span class="product-card__price-old">9 231 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1936,7 +1931,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -1984,7 +1979,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка влагозащитная женская Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка влагозащитная женская Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">17 335 ₽</span><span class="product-card__price-old">21 085 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -1999,7 +1994,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2047,7 +2042,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Перчатки мембранные унисекс Salomon</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Перчатки мембранные унисекс Salomon</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">31 597 ₽</span><span class="product-card__price-old">32 762 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2062,7 +2057,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2110,7 +2105,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Толстовка зимняя женская Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Толстовка зимняя женская Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">28 564 ₽</span><span class="product-card__price-old">38 227 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2125,7 +2120,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2173,7 +2168,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Рюкзак утепленный мужской Merrell</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Рюкзак утепленный мужской Merrell</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">5 548 ₽</span><span class="product-card__price-old">7 075 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2188,7 +2183,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2236,7 +2231,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Рюкзак треккинговый женский Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Рюкзак треккинговый женский Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">15 031 ₽</span><span class="product-card__price-old">16 140 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2251,7 +2246,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2299,7 +2294,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Рюкзак треккинговый унисекс Columbia</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Рюкзак треккинговый унисекс Columbia</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">29 873 ₽</span><span class="product-card__price-old">36 881 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2314,7 +2309,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2362,7 +2357,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Перчатки зимние унисекс Kappa</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Перчатки зимние унисекс Kappa</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">16 571 ₽</span><span class="product-card__price-old">18 430 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2377,7 +2372,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2425,7 +2420,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Толстовка утепленная унисекс Volkl</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Толстовка утепленная унисекс Volkl</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">24 616 ₽</span><span class="product-card__price-old">26 120 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2440,7 +2435,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2488,7 +2483,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Ботинки мембранные женские Salomon</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Ботинки мембранные женские Salomon</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">5 824 ₽</span><span class="product-card__price-old">8 096 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2503,7 +2498,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2551,7 +2546,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка мембранная унисекс North Face</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка мембранная унисекс North Face</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">6 535 ₽</span><span class="product-card__price-old">9 400 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2566,7 +2561,7 @@
                   </div>
                 </button>
                 <div class="markers">
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2614,7 +2609,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка влагозащитная унисекс Kappa</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка влагозащитная унисекс Kappa</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">18 942 ₽</span><span class="product-card__price-old">25 140 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2629,7 +2624,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2677,7 +2672,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Толстовка зимняя мужская Outventure</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Толстовка зимняя мужская Outventure</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">19 551 ₽</span><span class="product-card__price-old">31 080 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2692,7 +2687,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2740,7 +2735,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Футболка влагозащитная мужская Outventure</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Футболка влагозащитная мужская Outventure</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">19 423 ₽</span><span class="product-card__price-old">22 150 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2755,7 +2750,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2803,7 +2798,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка влагозащитная унисекс Merrell</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка влагозащитная унисекс Merrell</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">10 851 ₽</span><span class="product-card__price-old">14 500 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2818,7 +2813,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2866,7 +2861,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Ботинки влагозащитные мужские Outventure</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Ботинки влагозащитные мужские Outventure</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">9 120 ₽</span><span class="product-card__price-old">11 230 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2881,7 +2876,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2929,7 +2924,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Толстовка зимняя мужская North Face</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Толстовка зимняя мужская North Face</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">21 314 ₽</span><span class="product-card__price-old">26 014 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -2944,7 +2939,7 @@
                   </div>
                 </button>
                 <div class="markers"><span class="marker" style="color: #838891; background: #DDE3E8">NEW</span><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span>
-                </div><a class="product-card__preview" href="../pages/product.html" aria-label="Перейти на страницу товара">
+                </div><a class="product-card__preview" href="/builder-mpa/pages/product.html" aria-label="Перейти на страницу товара">
                   <div class="swiper-over js-swiper-over">
                     <div class="swiper">
                       <div class="swiper-wrapper">
@@ -2992,7 +2987,7 @@
                   </div>
                 </header>
                 <div class="product-card__content">
-                  <h3 class="product-card__name"><a href="../pages/product.html">Шапка мембранная унисекс Salomon</a></h3>
+                  <h3 class="product-card__name"><a href="/builder-mpa/pages/product.html">Шапка мембранная унисекс Salomon</a></h3>
                   <div class="product-card__coast"><span class="product-card__price-new">19 702 ₽</span><span class="product-card__price-old">23 500 ₽</span></div>
                 </div>
                 <footer class="product-card__footer">
@@ -3022,7 +3017,7 @@
                     <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-1">
+                    </button><span class="marker" style="color: #838891; background: #DFF0FF">ХИТ</span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-1">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Куртка треккинговая North Face" loading="lazy"/>
@@ -3039,7 +3034,7 @@
                     <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-2">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-2">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Рюкзак мембранный мужской Merrell" loading="lazy"/>
@@ -3056,7 +3051,7 @@
                     <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-3">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-3">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Футболка влагозащитная мужская Merrell" loading="lazy"/>
@@ -3073,7 +3068,7 @@
                     <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-4">
+                    </button><span class="marker" style="color: undefined; background: undefined"></span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-4">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Рюкзак спортивный женский Volkl" loading="lazy"/>
@@ -3090,7 +3085,7 @@
                     <button class="favorite active" type="button" aria-pressed="true" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-5">
+                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-5">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Куртка спортивная женская Salomon" loading="lazy"/>
@@ -3107,7 +3102,7 @@
                     <button class="favorite" type="button" aria-pressed="false" aria-label="Добавить в избранное">
                       <div class="favorite__icons"><i class="icon icon-favorite" aria-hidden="true"></i><i class="icon icon-favorite-fill" aria-hidden="true"></i>
                       </div>
-                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="../pages/product.html" aria-labelledby="product-short-product-6">
+                    </button><span class="marker" style="color: #1B2125; background: #FFE4A0">АКЦИЯ</span><a class="product-short__body" href="/builder-mpa/pages/product.html" aria-labelledby="product-short-product-6">
                       <div class="product-short__preview">
                         <picture class="picture js-picture">
                           <source srcset="../images/product-1.webp" type="image/webp"/><img src="../images/product-1.jpg" alt="Шапка спортивная унисекс Columbia" loading="lazy"/>
@@ -3133,9 +3128,11 @@
       <p class="subscribe__subtitle">Подпишитесь на нашу рассылку и получите промокод на скидку 10%</p>
       <form class="subscribe__form js-subscribe__form" novalidate="novalidate">
         <div class="form-element js-form-element">
-          <div class="form-element">
-            <input class="form-input js-form-input" id="subscribe-email" type="email" name="email" placeholder="Введите Email" autocomplete="email" required="required" data-message="email" data-rule="email"/>
-          </div>
+          <label>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="subscribe-email" type="email" name="email" placeholder="Введите Email" autocomplete="email" required="required" data-message="email" data-rule="email"/>
+            </div>
+          </label>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <button class="button button--outline subscribe__button js-subscribe__button" type="submit" disabled="true"><span>Подписаться<i class="icon icon-send" aria-hidden="true"></i></span></button>
@@ -3199,11 +3196,11 @@
         <div class="footer__secondary">
           <nav aria-label="Социальные сети">
             <ul class="footer__social-list">
-              <li><a href="#" target="_blank" aria-label="YouTube"><img src="../images/icon-youtube.svg" alt="YouTube" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Instagram"><img src="../images/icon-instagram.svg" alt="Instagram" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="../images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="VK"><img src="../images/icon-vk.svg" alt="VK" width="22" height="22"/></a></li>
-              <li><a href="#" target="_blank" aria-label="Telegram"><img src="../images/icon-telegram.svg" alt="Telegram" width="22" height="22"/></a></li>
+              <li><a href="#" target="_blank" aria-label="YouTube"><img src="/builder-mpa/images/icon-youtube.svg" alt="YouTube" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Instagram"><img src="/builder-mpa/images/icon-instagram.svg" alt="Instagram" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Whatsapp"><img src="/builder-mpa/images/icon-whatsapp.svg" alt="Whatsapp" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="VK"><img src="/builder-mpa/images/icon-vk.svg" alt="VK" width="22" height="22" loading="lazy"/></a></li>
+              <li><a href="#" target="_blank" aria-label="Telegram"><img src="/builder-mpa/images/icon-telegram.svg" alt="Telegram" width="22" height="22" loading="lazy"/></a></li>
             </ul>
           </nav>
           <div class="footer__legal">
@@ -3224,10 +3221,10 @@
           </ul>
         </nav>
         <ul class="footer__payment">
-          <li><img src="../images/mir.svg" alt="Платёжная система Мир" width="50" height="15"/></li>
-          <li><img src="../images/visa.svg" alt="Платёжная система Visa" width="44" height="15"/></li>
-          <li><img src="../images/mastercard.svg" alt="Платёжная система Mastercard" width="34" height="21"/></li>
-          <li><img src="../images/qiwi.svg" alt="Платёжный сервис QIWI" width="56" height="21"/></li>
+          <li><img src="/builder-mpa/images/mir.svg" alt="Платёжная система Мир" width="50" height="15" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/visa.svg" alt="Платёжная система Visa" width="44" height="15" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/mastercard.svg" alt="Платёжная система Mastercard" width="34" height="21" loading="lazy"/></li>
+          <li><img src="/builder-mpa/images/qiwi.svg" alt="Платёжный сервис QIWI" width="56" height="21" loading="lazy"/></li>
         </ul>
       </div>
     </div>
@@ -3245,19 +3242,19 @@
       <div class="modal-window__text">Если вы не желаете дожидаться ответа по нашей Горячей Линии, то просто оставьте свой номер телефона и мы сами вам перезвоним</div>
       <form class="callback-form js-callback" novalidate="novalidate">
         <div class="form-element js-form-element">
-          <label class="form-element__label"><span>Имя</span><span class="form-element__required" aria-hidden="true">*</span>
+          <label><span class="form-element__label">Имя</span><span class="form-element__required" aria-hidden="true">*</span>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="callback-name" type="text" name="name" placeholder="Введите Имя" autocomplete="given-name" required="required" data-message="text" data-rule="text"/>
+            </div>
           </label>
-          <div class="form-element">
-            <input class="form-input js-form-input" id="callback-name" type="text" name="name" placeholder="Введите Имя" autocomplete="given-name" required="required" data-message="text" data-rule="text"/>
-          </div>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <div class="form-element js-form-element">
-          <label class="form-element__label"><span>Номер телефона</span><span class="form-element__required" aria-hidden="true">*</span>
+          <label><span class="form-element__label">Номер телефона</span><span class="form-element__required" aria-hidden="true">*</span>
+            <div class="form-element">
+              <input class="form-input js-form-input" id="callback-tel" type="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="tel" required="required" maxlength="18" data-message="tel" data-rule="tel"/>
+            </div>
           </label>
-          <div class="form-element">
-            <input class="form-input js-form-input" id="callback-tel" type="tel" name="tel" placeholder="+7(___) ___-__-__" autocomplete="tel" required="required" maxlength="18" data-message="tel" data-rule="tel"/>
-          </div>
           <div class="form-element__message js-form-element__message"></div>
         </div>
         <button class="button button--primary callback-form__button js-callback__button" type="submit"><span>Отправить заявку</span></button>
