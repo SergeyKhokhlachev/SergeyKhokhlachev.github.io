@@ -1,0 +1,2 @@
+var e=class{$element;$value=null;constructor(e){this.$element=e,this.$element&&(this.$value=this.$element.querySelector(`.js-location-value`),this.init())}init(){document.addEventListener(`locationChange`,this.changeHandler)}destroy(){document.removeEventListener(`locationChange`,this.changeHandler)}reinit(){this.destroy(),this.init()}changeHandler=e=>{let t=e;this.$value&&(this.$value.textContent=t.detail.location)}};export{e as default};
+//# sourceMappingURL=location-ChxMq9wT.js.map

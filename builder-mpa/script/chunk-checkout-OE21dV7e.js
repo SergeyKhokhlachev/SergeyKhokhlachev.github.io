@@ -1,3 +1,0 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["builder-mpa/style/vendor-D-yINyhH.css"])))=>i.map(i=>d[i]);
-import{t as e}from"./chunk-index-BwT3Q8nk.js";var t={checkout:null,async init(t){let n=t.querySelector(`.js-checkout-vue`);if(n)try{let[{createApp:t},{default:r}]=await Promise.all([e(()=>import(`./chunk-vendor-D8zPhSF-.js`).then(e=>e._),__vite__mapDeps([0])),e(()=>import(`./chunk-checkout-gVHv8SvH.js`),__vite__mapDeps([0]))]);this.formVue=t(r).mount(n)}catch(e){console.error(e)}},destroy(){this.checkout?.unmount(),this.checkout=null}};export{t as checkoutPage};
-//# sourceMappingURL=chunk-checkout-OE21dV7e.js.map

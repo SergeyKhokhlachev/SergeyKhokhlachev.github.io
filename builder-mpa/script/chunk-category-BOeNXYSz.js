@@ -1,2 +1,0 @@
-import{a as e}from"./chunk-helpers-DaAq5qtw.js";import{t}from"./chunk-swiper-carusel-CZmTLlZS.js";var n={swiperViewed:null,async init(e){let n=e.querySelector(`.js-swiper-viewed`);n&&(this.swiperViewed=new t(n))},destroy(){e(this.swiperViewed)&&this.swiperViewed.destroy(),this.swiperViewed=null}};export{n as categoryPage};
-//# sourceMappingURL=chunk-category-BOeNXYSz.js.map
