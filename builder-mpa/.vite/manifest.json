@@ -1,11 +1,11 @@
 {
-  "_bundle-BFtTJxBD.js": {
-    "file": "script/bundle-BFtTJxBD.js",
+  "_bundle-DjYdle0g.js": {
+    "file": "script/bundle-DjYdle0g.js",
     "name": "bundle",
     "imports": [
       "_rolldown-runtime-QTnfLwEv.js",
       "_vendor-CxHRO1v2.js",
-      "_helpers-DaAq5qtw.js"
+      "_helpers-uCWstXjt.js"
     ],
     "dynamicImports": [
       "components/features/search/search.ts",
@@ -25,27 +25,27 @@
       "templates/pages/checkout.js"
     ],
     "css": [
-      "style/bundle-Ba3afv10.css"
+      "style/bundle-HtuV-EkJ.css"
     ]
   },
-  "_bundle-Ba3afv10.css": {
-    "file": "style/bundle-Ba3afv10.css",
-    "src": "_bundle-Ba3afv10.css"
+  "_bundle-HtuV-EkJ.css": {
+    "file": "style/bundle-HtuV-EkJ.css",
+    "src": "_bundle-HtuV-EkJ.css"
   },
   "_dadata-CbsLzbQg.js": {
     "file": "script/dadata-CbsLzbQg.js",
     "name": "dadata"
   },
-  "_form-Dtb9rZqY.js": {
-    "file": "script/form-Dtb9rZqY.js",
+  "_form-s2INsrSr.js": {
+    "file": "script/form-s2INsrSr.js",
     "name": "form",
     "imports": [
-      "_helpers-DaAq5qtw.js",
+      "_helpers-uCWstXjt.js",
       "_formatting-B0rSGNJC.js"
     ]
   },
-  "_form-pucNRnSH.js": {
-    "file": "script/form-pucNRnSH.js",
+  "_form-sKqBywKP.js": {
+    "file": "script/form-sKqBywKP.js",
     "name": "form",
     "imports": [
       "_vendor-CxHRO1v2.js",
@@ -60,8 +60,8 @@
     "file": "script/get-cart-Qaea6H6W.js",
     "name": "get-cart"
   },
-  "_helpers-DaAq5qtw.js": {
-    "file": "script/helpers-DaAq5qtw.js",
+  "_helpers-uCWstXjt.js": {
+    "file": "script/helpers-uCWstXjt.js",
     "name": "helpers"
   },
   "_render-or7qyz4Q.js": {
@@ -72,12 +72,12 @@
     "file": "script/rolldown-runtime-QTnfLwEv.js",
     "name": "rolldown-runtime"
   },
-  "_swiper-carusel-43vVmqZ2.js": {
-    "file": "script/swiper-carusel-43vVmqZ2.js",
+  "_swiper-carusel-CLqOpJP6.js": {
+    "file": "script/swiper-carusel-CLqOpJP6.js",
     "name": "swiper-carusel",
     "imports": [
       "_vendor-CxHRO1v2.js",
-      "_helpers-DaAq5qtw.js"
+      "_helpers-uCWstXjt.js"
     ]
   },
   "_vendor-CxHRO1v2.js": {
@@ -95,27 +95,27 @@
     "src": "_vendor-D-yINyhH.css"
   },
   "components/features/callback/callback-form/callback-form.ts": {
-    "file": "script/callback-form-DD3VUnbd.js",
+    "file": "script/callback-form-BbVSxU36.js",
     "name": "callback-form",
     "src": "components/features/callback/callback-form/callback-form.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_form-Dtb9rZqY.js"
+      "_form-s2INsrSr.js"
     ]
   },
   "components/features/checkout/checkout-preview/checkout-preview.vue": {
-    "file": "script/checkout-preview-Bs30Obby.js",
+    "file": "script/checkout-preview-mFf2ez11.js",
     "name": "checkout-preview",
     "src": "components/features/checkout/checkout-preview/checkout-preview.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-CxHRO1v2.js",
       "_get-cart-Qaea6H6W.js",
-      "_helpers-DaAq5qtw.js"
+      "_helpers-uCWstXjt.js"
     ]
   },
   "components/features/checkout/checkout.vue": {
-    "file": "script/checkout-BkQW_IUA.js",
+    "file": "script/checkout-DJJJROr-.js",
     "name": "checkout",
     "src": "components/features/checkout/checkout.vue",
     "isDynamicEntry": true,
@@ -123,8 +123,8 @@
       "_vendor-CxHRO1v2.js",
       "_get-cart-Qaea6H6W.js",
       "_dadata-CbsLzbQg.js",
-      "_helpers-DaAq5qtw.js",
-      "_form-pucNRnSH.js"
+      "_helpers-uCWstXjt.js",
+      "_form-sKqBywKP.js"
     ]
   },
   "components/features/common/main-faq/main-faq.vue": {
@@ -153,13 +153,13 @@
     "isDynamicEntry": true
   },
   "components/features/login/login.vue": {
-    "file": "script/login-Blj_A8KK.js",
+    "file": "script/login-BDb7ALVE.js",
     "name": "login",
     "src": "components/features/login/login.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-CxHRO1v2.js",
-      "_form-pucNRnSH.js"
+      "_form-sKqBywKP.js"
     ]
   },
   "components/features/search/search.ts": {
@@ -181,23 +181,23 @@
     ]
   },
   "components/features/subscribe/subscribe.ts": {
-    "file": "script/subscribe-DDY63G5Z.js",
+    "file": "script/subscribe-D0MkBQI2.js",
     "name": "subscribe",
     "src": "components/features/subscribe/subscribe.ts",
     "isDynamicEntry": true,
     "imports": [
-      "_form-Dtb9rZqY.js"
+      "_form-s2INsrSr.js"
     ]
   },
   "components/features/uikit/uikit-form-vue/uikit-form-vue.vue": {
-    "file": "script/uikit-form-vue-BENO90ny.js",
+    "file": "script/uikit-form-vue-C4ZKLQdZ.js",
     "name": "uikit-form-vue",
     "src": "components/features/uikit/uikit-form-vue/uikit-form-vue.vue",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-CxHRO1v2.js",
       "_render-or7qyz4Q.js",
-      "_form-pucNRnSH.js"
+      "_form-sKqBywKP.js"
     ]
   },
   "spritemap.svg": {
@@ -205,35 +205,36 @@
     "src": "spritemap.svg"
   },
   "templates/pages/catalog.js": {
-    "file": "script/catalog-CCV-vAYz.js",
+    "file": "script/catalog-DYFglJMz.js",
     "name": "catalog",
     "src": "templates/pages/catalog.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js",
+      "_bundle-DjYdle0g.js",
       "_vendor-CxHRO1v2.js",
-      "_helpers-DaAq5qtw.js",
-      "_form-Dtb9rZqY.js",
-      "_swiper-carusel-43vVmqZ2.js"
+      "_helpers-uCWstXjt.js",
+      "_form-s2INsrSr.js",
+      "_swiper-carusel-CLqOpJP6.js"
     ]
   },
   "templates/pages/category.js": {
-    "file": "script/category-CPMsu_sj.js",
+    "file": "script/category-BS0zOzox.js",
     "name": "category",
     "src": "templates/pages/category.js",
     "isDynamicEntry": true,
     "imports": [
-      "_helpers-DaAq5qtw.js",
-      "_swiper-carusel-43vVmqZ2.js"
+      "_helpers-uCWstXjt.js",
+      "_swiper-carusel-CLqOpJP6.js"
     ]
   },
   "templates/pages/checkout.js": {
-    "file": "script/checkout-2WgjWUFH.js",
+    "file": "script/checkout-bJzj7wf1.js",
     "name": "checkout",
     "src": "templates/pages/checkout.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js"
+      "_bundle-DjYdle0g.js",
+      "_helpers-uCWstXjt.js"
     ],
     "dynamicImports": [
       "_vendor-CxHRO1v2.js",
@@ -241,15 +242,15 @@
     ]
   },
   "templates/pages/main.js": {
-    "file": "script/main-6fknh2RR.js",
+    "file": "script/main-Dwoq4XT3.js",
     "name": "main",
     "src": "templates/pages/main.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js",
+      "_bundle-DjYdle0g.js",
       "_vendor-CxHRO1v2.js",
-      "_helpers-DaAq5qtw.js",
-      "_swiper-carusel-43vVmqZ2.js"
+      "_helpers-uCWstXjt.js",
+      "_swiper-carusel-CLqOpJP6.js"
     ],
     "dynamicImports": [
       "_vendor-CxHRO1v2.js",
@@ -257,27 +258,27 @@
     ]
   },
   "templates/pages/product.js": {
-    "file": "script/product-BY7JJAml.js",
+    "file": "script/product-CylUwHdk.js",
     "name": "product",
     "src": "templates/pages/product.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js",
+      "_bundle-DjYdle0g.js",
       "_vendor-CxHRO1v2.js",
-      "_helpers-DaAq5qtw.js",
-      "_form-Dtb9rZqY.js",
-      "_swiper-carusel-43vVmqZ2.js"
+      "_helpers-uCWstXjt.js",
+      "_form-s2INsrSr.js",
+      "_swiper-carusel-CLqOpJP6.js"
     ]
   },
   "templates/pages/shops.js": {
-    "file": "script/shops-ClGIWdLS.js",
+    "file": "script/shops-DziZr3E4.js",
     "name": "shops",
     "src": "templates/pages/shops.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js",
-      "_helpers-DaAq5qtw.js",
-      "_swiper-carusel-43vVmqZ2.js"
+      "_bundle-DjYdle0g.js",
+      "_helpers-uCWstXjt.js",
+      "_swiper-carusel-CLqOpJP6.js"
     ],
     "dynamicImports": [
       "_vendor-CxHRO1v2.js",
@@ -285,15 +286,15 @@
     ]
   },
   "templates/pages/ui-kit.js": {
-    "file": "script/ui-kit-CewpesZx.js",
+    "file": "script/ui-kit-BWuK93Pl.js",
     "name": "ui-kit",
     "src": "templates/pages/ui-kit.js",
     "isDynamicEntry": true,
     "imports": [
-      "_bundle-BFtTJxBD.js",
-      "_helpers-DaAq5qtw.js",
+      "_bundle-DjYdle0g.js",
+      "_helpers-uCWstXjt.js",
       "_render-or7qyz4Q.js",
-      "_form-Dtb9rZqY.js"
+      "_form-s2INsrSr.js"
     ],
     "dynamicImports": [
       "_vendor-CxHRO1v2.js",

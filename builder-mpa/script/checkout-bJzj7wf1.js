@@ -1,0 +1,3 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["builder-mpa/style/vendor-D-yINyhH.css"])))=>i.map(i=>d[i]);
+import{t as e}from"./bundle-DjYdle0g.js";import{o as t}from"./helpers-uCWstXjt.js";var n={checkout:null,async init(n){let r=n.querySelector(`.js-checkout-vue`);if(r)try{let[{createApp:n},{default:i}]=await Promise.all([e(()=>import(`./vendor-CxHRO1v2.js`).then(e=>e._),__vite__mapDeps([0])),e(()=>import(`./checkout-DJJJROr-.js`),__vite__mapDeps([0]))]);this.checkout=n(i).mixin({mounted(){(this.$options.name===i.name||!this.$parent)&&t.hide()}}).mount(r)}catch(e){console.error(e),t.hide()}else t.hide()},destroy(){this.checkout&&=(this.checkout.unmount(),null)}};export{n as checkoutPage};
+//# sourceMappingURL=checkout-bJzj7wf1.js.map

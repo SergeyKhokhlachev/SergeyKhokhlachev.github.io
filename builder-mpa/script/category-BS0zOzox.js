@@ -1,0 +1,2 @@
+import{a as e,o as t}from"./helpers-uCWstXjt.js";import{t as n}from"./swiper-carusel-CLqOpJP6.js";var r={swiperViewed:null,async init(e){let r=e.querySelector(`.js-swiper-viewed`);r&&(this.swiperViewed=new n(r)),t.hide()},destroy(){e(this.swiperViewed)&&this.swiperViewed.destroy(),this.swiperViewed=null}};export{r as categoryPage};
+//# sourceMappingURL=category-BS0zOzox.js.map
